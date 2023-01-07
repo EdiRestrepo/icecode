@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+/*Todo el contenido*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Todo el contenido*/
+body {
+  background: #FFF5F6;
+}
+
+.gallery {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+.gallery__img {
+  border-radius: 20px;
+  width: 100%;
+}
+.gallery__img:hover {
+  transform: scale(1.15);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+.gallery__img-1 {
+  width: 138px;
+  height: 85.92px;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.gallery__img-2 {
+  margin-left: 7px;
+  margin-bottom: 7px;
+}
+.gallery__img-3 {
+  margin-left: 7px;
+}
+.gallery__img-4 {
+  margin-top: -90px;
+  margin-left: 7px;
+}
+.gallery__img-5 {
+  margin-left: 7px;
+  margin-top: 6px;
+  width: 50%;
+}
+.gallery__img-6 {
+  margin-top: 8px;
+  margin-left: 7px;
+}
+.gallery__img-7 {
+  margin-left: 7px;
+  margin-top: 6px;
+}
+.gallery__img-8 {
+  margin-top: -25px;
+  margin-left: 7px;
+}
+.gallery__img-9 {
+  margin-top: 4px;
+  margin-left: 7px;
+}
+.gallery__img-10 {
+  margin-left: 7px;
+  margin-top: 70px;
+}/*# sourceMappingURL=style.css.map */
