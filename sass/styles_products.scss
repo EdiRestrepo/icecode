@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+@import 'utils/variables';
+
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+
+
+/*Todo el contenido*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; //esto asegura que el relleno y el borde estan incluidos en el ancho total y altura de los elementos
+    text-decoration: none;
+    list-style: none;
+
+  }
+  
+  /*Todo el contenido*/
+  // body {
+    
+    // }
+    
+  main section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main section h2 {
+    color: $dark-pink;
+    font-family:  Titan one;
+    font-size: 58px;
+    letter-spacing: 0.06em
+  }
+
+  main section h3 {
+    color: $light-pink;
+    font-family: Titan one;
+    letter-spacing: 0.04em;
+    
+  }
+
+  main section h3:hover{
+    animation: rotacion 4s ;
+    animation-direction: alternate;
+}
+
+@keyframes rotacion {
+    0% {
+        letter-spacing: 10px;
+    }
+}
+
+main section h2:hover{
+  animation: rotacion 4s ;
+  animation-direction: alternate;
+}
+
+@keyframes rotacion {
+  0% {
+      letter-spacing: 35px;
+  }
+}
+
+  .products {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .titles {
+    align-items: center;
+    display: flex;
+    margin-top: 8em;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main section p {
+    color: $white;
+  }
+
+  .images {
+    display: flex;
+  }
+
+  .information-product {
+    cursor: pointer;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    width: 14em;
+    margin-top: 5em;
+    margin-left: 5.7em;
+    text-align: center;
+  }
+
+  .tarjet-1 {
+    cursor: pointer;
+    background-color: $strawberry;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 4em;
+    width: 19%;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-1:hover {
+    transition: 1s;
+    background-color: rgb(224, 145, 158);
+    box-shadow: 5px 4px 5px rgb(228, 165, 176),
+    4px 3px 4px rgb(243, 177, 188),
+    3px 2px 3px rgb(252, 197, 206),
+    2px 1px 2px rgb(255, 209, 217);
+  }
+
+  .tarjet-2 {
+    cursor: pointer;
+    background-color: $coffee;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 4em;
+    width: 19%;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-2:hover {
+    transition: 1s;
+    background-color: #cfae7f;
+    box-shadow: 5px 4px 5px #dfb983,
+    4px 3px 4px #e9c592,
+    3px 2px 3px #ffd69c,
+    2px 1px 2px #F0D1A5;
+  }
+
+  .tarjet-3 {
+    cursor: pointer;
+    background-color: $lime;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 4em;
+    width: 19%;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-3:hover {
+    transition: 1s;
+    background-color: #9fce62;
+    box-shadow: 5px 4px 5px #b8e480,
+    4px 3px 4px #cbf891,
+    3px 2px 3px #c7ec96,
+    2px 1px 2px #aecc88;
+  }
+
+  #arrow {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  #bottom {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-1:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-1:hover #bottom {
+    fill: $dark-pink;
+  }
+
+  .tarjet-2:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-2:hover #bottom {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  .tarjet-3:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-3:hover #bottom {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  .products svg {
+    cursor: pointer;
+    transition: 500ms;
+    transform: translateX(11.3em) translateY(5em);
+  }
+
+  .tarjet-1:hover svg {
+    border-radius: 4px;
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(11.3em);
+  }
+
+  .tarjet-2:hover svg {
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(11.3em);
+  }
+
+  .tarjet-3:hover svg {
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(11.3em);
+  }
+
+  .image-1 {
+    height: 30em;
+    width: 28em;
+    transform: translateY(10em) translateX(20.7em);
+  }
+
+  .image-2 {
+    height: 30em;
+    width: 28em;
+    transform: translateY(10em) translateX(25em);
+  }
+
+  .image-3 {
+    height: 30em;
+    width: 28em;
+    transform: translateY(10em) translateX(29em);
+  }
+
+  .name-product {
+    font-family: Titan one;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 7em;
+    margin-left: 3.9em;
+  }
+
+  .dot {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  @import 'components/header';
+  @import 'components/products';
+
+
+  
+
