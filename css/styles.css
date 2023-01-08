@@ -8,9 +8,99 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background: #D41443;
 }
 
 /*Todo el contenido*/
+.about {
+  background-color: #FFF5F6;
+}
+.about__title {
+  color: #D41443;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 40px;
+}
+.about__title:hover {
+  -webkit-animation: rotacion 4s;
+          animation: rotacion 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.about__subtitle {
+  color: #FFA5BA;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-top: 16px;
+}
+.about__subtitle:hover {
+  -webkit-animation: rotacion 4s;
+          animation: rotacion 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.about__texto {
+  padding: 10% 15% 10% 15%;
+}
+.about__texto--principal {
+  color: #000000;
+  margin-bottom: 32px;
+  width: 463px;
+}
+.about__texto--principal:hover {
+  transform: scale(1.15);
+  transition-duration: 500ms;
+}
+.about__texto--secundario {
+  color: #907E82;
+  margin-bottom: 32px;
+  width: 463px;
+}
+.about__texto--secundario:hover {
+  transform: scale(1.15);
+  transition-duration: 500ms;
+}
+.about__list {
+  display: flex;
+}
+.about__image {
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.about__image:hover {
+  transform: rotate(90deg);
+}
+.about__readmore {
+  width: 176px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  color: #D41443;
+  border: 1px solid #FFB8CA;
+}
+.about__readmore:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
 
-/*# sourceMappingURL=styles.css.map */
+@-webkit-keyframes rotacion {
+  0% {
+    letter-spacing: 12px;
+  }
+}
+
+@keyframes rotacion {
+  0% {
+    letter-spacing: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */

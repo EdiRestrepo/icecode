@@ -1,0 +1,100 @@
+@import '../utils/variables';
+
+.about{
+    background-color: $background-pink;
+    &__title {
+            color: $dark-pink;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 34px;
+            letter-spacing: 0.04em;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+    &__title:hover {
+        animation: rotacion 4s;
+        animation-direction: alternate;
+    }
+
+    &__subtitle{
+        color: $light-pink;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    &__subtitle:hover {
+        animation: rotacion 4s;
+        animation-direction: alternate;
+    }
+
+    &__texto {
+        padding: 10% 15% 10% 15%;
+        &--principal{
+            color: $black;
+            margin-bottom: 32px;
+            width: 463px;
+        }
+
+        &--principal:hover {
+            transform: scale(1.15);
+            transition-duration: 500ms;
+        }
+
+        &--secundario {
+            color: $gray;
+            margin-bottom: 32px;
+            width: 463px;
+        }
+
+        &--secundario:hover {
+            transform: scale(1.15);
+            transition-duration: 500ms;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__image {
+    
+        transition-property: transform;
+        transition-duration: 2000ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+
+    &__image:hover {
+        transform: rotate(90deg);
+    }
+
+    &__readmore {
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        border-radius: 22px;
+        color: $dark-pink;
+        border: 1px solid $strawberry;
+    }
+
+    &__readmore:hover {
+        transform: scale(1.2);
+        transition-duration: 500ms;
+        cursor: pointer;
+    }
+}
+
+
+@keyframes rotacion {
+    0% {
+        letter-spacing: 12px;
+    }
+}
+
