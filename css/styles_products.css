@@ -104,7 +104,7 @@ main section .products li {
   display: flex;
   height: 40em;
   margin: 0 3em 60px 0;
-  width: 100%;
+  width: 105%;
   flex-direction: column;
   transition: 1s;
 }
@@ -123,7 +123,7 @@ main section .products li {
   display: flex;
   height: 40em;
   margin: 0 3em 60px 0;
-  width: 100%;
+  width: 105%;
   flex-direction: column;
   transition: 1s;
 }
@@ -142,7 +142,7 @@ main section .products li {
   display: flex;
   height: 40em;
   margin: 0 3em 60px 0;
-  width: 100%;
+  width: 105%;
   flex-direction: column;
   transition: 1s;
 }
@@ -195,53 +195,68 @@ main section .products li {
 .products svg {
   cursor: pointer;
   transition: 500ms;
-  transform: translateX(9.5em) translateY(5em);
+  transform: translateX(9.8em) translateY(5em);
 }
 
 .tarjet-1:hover svg {
   border-radius: 4px;
   transition: 500ms;
-  transform: rotate(-90deg) translateX(-5em) translateY(9.5em);
+  transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
 }
 
 .tarjet-2:hover svg {
   transition: 500ms;
-  transform: rotate(-90deg) translateX(-5em) translateY(9.5em);
+  transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
 }
 
 .tarjet-3:hover svg {
   transition: 500ms;
-  transform: rotate(-90deg) translateX(-5em) translateY(9.5em);
+  transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
 }
 
 .image-1 {
   position: absolute;
-  transform: translateX(-10px);
-  bottom: 25em;
+  bottom: 9em;
   z-index: 1;
 }
 
 .image-2 {
   position: absolute;
-  transform: translateX(-10px);
-  bottom: 25em;
+  bottom: 9em;
   z-index: 1;
 }
 
 .image-3 {
   position: absolute;
-  transform: translateX(-7px);
-  bottom: 25em;
+  bottom: 9em;
   z-index: 1;
 }
 
-.name-product {
+.name-product-1 {
+  color: #ffffff;
+  font-family: Titan one;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 7em;
+  margin-left: 3.2em;
+}
+
+.name-product-2 {
   color: #ffffff;
   font-family: Titan one;
   font-weight: 400;
   font-size: 30px;
   margin-top: 7em;
   margin-left: 3.1em;
+}
+
+.name-product-3 {
+  color: #ffffff;
+  font-family: Titan one;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 7em;
+  margin-left: 2.7em;
 }
 
 .dot {
