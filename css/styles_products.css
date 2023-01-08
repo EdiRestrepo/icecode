@@ -217,18 +217,21 @@ main section .products li {
 .image-1 {
   position: absolute;
   bottom: 9em;
+  width: 358px;
   z-index: 1;
 }
 
 .image-2 {
   position: absolute;
   bottom: 9em;
+  width: 358px;
   z-index: 1;
 }
 
 .image-3 {
   position: absolute;
   bottom: 9em;
+  width: 358px;
   z-index: 1;
 }
 
