@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-
-@import 'utils/variables';
+@import "utils/variables";
+@import "utils/mixin";
 
 @import "node_modules/modern-normalize/modern-normalize.css";
 
-
+/*Todo el contenido*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; //esto asegura que el relleno y el borde estan incluidos en el ancho total y altura de los elementos
+  text-decoration: none;
+  list-style: none;
+}
 
 /*Todo el contenido*/
+<<<<<<< HEAD:sass/styles.scss
 *{
     padding: 0;
     margin: 0;
@@ -28,4 +36,14 @@
 
 
   
+=======
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'DM Sans', sans-serif;
+}
+>>>>>>> dev:sass/main.scss
 
+@import "components/header";
