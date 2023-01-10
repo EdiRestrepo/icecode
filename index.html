@@ -10,41 +10,167 @@
 </head>
 <body>
     <header>
-
+      <div class="img">
+        <img class="img__ice" src="./img/header/ice-cream.png" />
+        <img class="img__milk" src="./img/header/milk.png" />
+        <img class="img__tasty" src="./img/header/tasty.png" />
+        <svg class="img__circle-ice" width="534" height="534" viewBox="0 0 1 1">
+          <circle r="1" cx="50%" cy="50%" />
+        </svg>
+      </div>
+      <nav class="nav-bar">
+        <svg width="199px" height="50px">
+          <use href="./img/header/icons.svg#icon-logo"></use>
+        </svg>
+        <ul class="list menu">
+          <li class="effect"><a class="menu__link site" href="#">Home</a></li>
+          <li class="effect"><a class="menu__link" href="#">About us</a></li>
+          <li class="effect">
+            <a class="menu__link" href="#">How it's made?</a>
+          </li>
+          <li class="effect">
+            <a class="menu__link" href="#">Our products</a>
+          </li>
+          <li class="effect"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+        <div class="media-div">
+          <button class="media__modal" mobile-menu-open>
+            <svg width="20px" height="12px">
+              <use href="./img/header/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <button class="effect btn nav__btn" type="button">
+            Buy now
+            <svg class="nav__svg" width="6px" height="12px">
+              <use href="./img/header/icons.svg#icon-triangle"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div class="banner-header">
+        <div class="banner__section">
+          <h1 class="title">
+            ice cream made with <span class="title__span">passion</span>
+          </h1>
+          <button class="effect btn banner__btn" type="button">Products</button>
+          <button class="effect btn banner__btn" type="button">
+            How it's made?
+          </button>
+        </div>
+        <a class="banner__location" href="">
+          <div class="local">
+            <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
+              <circle r="1" cx="50%" cy="50%" />
+            </svg>
+            <span class="local__number">16</span>
+            <span class="local__label">cafes</span>
+          </div>
+          <div class="local">
+            <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
+              <circle r="1" cx="50%" cy="50%" />
+            </svg>
+            <span class="local__number">32</span>
+            <span class="local__label">food trucks</span>
+          </div>
+        </a>
+      </div>
+      <div class="mix">
+        <p class="mix__inf">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="btn mix-btn">
+          <svg class="mix-btn__svg" width="8" height="16">
+            <use href="./img/header/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+      </div>
     </header>
 
     <main>
-        <!-- Section Advantages -->
-        <section class="advantages">
-            <ul class="advantages-list">
-                <li class="advantages-list__item">
-                    <svg class="advantages-list__svg" width="33" height="50">
-                        <use href="images/SVG/sprite.svg#glass"></use>
-                      </svg>
-                    <p class="advantages-list__number">721</p>
-                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-                </li>
-                <li class="advantages-list__item">
-                    <svg class="advantages-list__svg" width="50" height="50">
-                        <use href="images/SVG/sprite.svg#apples"></use>
-                      </svg>
-                    <p class="advantages-list__number">16kg</p>
-                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-                </li>
-                <li class="advantages-list__item">
-                    <svg class="advantages-list__svg" width="50" height="50">
-                        <use href="images/SVG/sprite.svg#frozen-heart"></use>
-                      </svg>
-                    <p class="advantages-list__number">84</p>
-                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-                </li>
-            </ul>
-        </section>
+            <!-- seccion about / how its made  -->
+            <section class="about">
+                <h3 class="about__title">Tradition and love</h3>
+                <h2 class="about__subtitle">How it's made?</h2>
+                <ul class="about__list">
+                    <li class="about__list--imagen">
+                        <div class="container">
+                            <img
+                                class="about__image"
+                                src="./images/about/cow.png"
+                                alt="vaca"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about__texto">
+                            <p class="about__texto--principal">
+                                Fusce ut velit laoreet, tempus arcu eu, molestie
+                                tortor. Nam vel justo cursus, faucibus lorem
+                                eget, egestas eros. Maecenas eleifend erat at
+                                justo fringilla.
+                            </p>
+                            <p class="about__texto--secundario">
+                                Curabitur lacinia enim at ex blandit, vel
+                                pellentesque odio elementum. Mauris rhoncus orci
+                                in imperdiet placerat. Vestibulum euismod nisl
+                                suscipit ligula volutpat, a feugiat urna
+                                maximus. Cras massa nibh, tincidunt. Aliquam
+                                erat volutpat. Aenean accumsan.
+                            </p>
 
-    </main>
+                            <button class="about__readmore">Read more ></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+                    <!-- Section Advantages -->
+        <section class="advantages">
+          <ul class="advantages-list">
+              <li class="advantages-list__item">
+                  <svg class="advantages-list__svg" width="33" height="50">
+                      <use href="images/SVG/sprite.svg#glass"></use>
+                    </svg>
+                  <p class="advantages-list__number">721</p>
+                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+              </li>
+              <li class="advantages-list__item">
+                  <svg class="advantages-list__svg" width="50" height="50">
+                      <use href="images/SVG/sprite.svg#apples"></use>
+                    </svg>
+                  <p class="advantages-list__number">16kg</p>
+                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+              </li>
+              <li class="advantages-list__item">
+                  <svg class="advantages-list__svg" width="50" height="50">
+                      <use href="images/SVG/sprite.svg#frozen-heart"></use>
+                    </svg>
+                  <p class="advantages-list__number">84</p>
+                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+              </li>
+          </ul>
+      </section>
+
+
+        </main>
+
+    
 
     <footer>
 
-    </footer> 
+    </footer>
 </body>
 </html>
