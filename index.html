@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Icecream</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
       <div class="img">
         <img class="img__ice" src="./img/header/ice-cream.png" />
@@ -99,32 +99,49 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+            <!-- seccion about / how its made  -->
+            <section class="about">
+                <h3 class="about__title">Tradition and love</h3>
+                <h2 class="about__subtitle">How it's made?</h2>
+                <ul class="about__list">
+                    <li class="about__list--imagen">
+                        <div class="container">
+                            <img
+                                class="about__image"
+                                src="./images/about/cow.png"
+                                alt="vaca"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about__texto">
+                            <p class="about__texto--principal">
+                                Fusce ut velit laoreet, tempus arcu eu, molestie
+                                tortor. Nam vel justo cursus, faucibus lorem
+                                eget, egestas eros. Maecenas eleifend erat at
+                                justo fringilla.
+                            </p>
+                            <p class="about__texto--secundario">
+                                Curabitur lacinia enim at ex blandit, vel
+                                pellentesque odio elementum. Mauris rhoncus orci
+                                in imperdiet placerat. Vestibulum euismod nisl
+                                suscipit ligula volutpat, a feugiat urna
+                                maximus. Cras massa nibh, tincidunt. Aliquam
+                                erat volutpat. Aenean accumsan.
+                            </p>
 
-    <footer></footer>
-    <section class="mobile-menu is-hidden" mobile-menu>
-      <button class="mobile__btn" type="button" mobile-menu-close>
-        <svg class="mobile__svg" width="12px" height="12px"><use href="./img/header/icons.svg#icon-close"></use></svg>
-      </button>
-      <button class="effect btn nav__btn btn--mobile" type="button">
-        Buy now
-        <svg class="nav__svg" width="6px" height="12px">
-          <use href="./img/header/icons.svg#icon-triangle"></use>
-        </svg>
-      </button>
-      <ul class="list menu--mobile">
-        <li class=" menu__item effect"><a class="menu__link site" href="#">Home</a></li>
-        <li class=" menu__item effect"><a class="menu__link" href="#">About us</a></li>
-        <li class=" menu__item effect">
-          <a class="menu__link" href="#">How it's made?</a>
-        </li>
-        <li class=" menu__item effect">
-          <a class="menu__link" href="#">Our products</a>
-        </li>
-        <li class="menu__item effect"><a class="menu__link" href="#">Contact</a></li>
-        <li class="menu__item"></li>
-      </ul>
-    </section>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+                            <button class="about__readmore">Read more ></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+    
+
+    <footer>
+
+    </footer>
+</body>
 </html>
