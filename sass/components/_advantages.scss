@@ -12,7 +12,14 @@
 
 .advantages-list{
     display: flex;
-    gap: 115px;
+    gap: 115px; 
+
+    .advantages-list__item{
+        transition-property: transform;
+        transition-duration: 1200ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
 
     .advantages-list__svg{
         fill: $light-pink;
@@ -46,10 +53,9 @@
 
 }
 
-.advantages-list:hover .advantages-list__item   {
-    animation: animate360 3000ms    ;
+.advantages-list:hover .advantages-list__item{
+    transform: rotate(360deg);
 }
-
 
 @keyframes spin {
     0% {
@@ -59,20 +65,7 @@
     100% {
       transform: rotate(360deg);
     }
-  }
 
-  @keyframes animate360 {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    50% {
-      transform: rotate(360deg);
-    }
-  
-    100% {
-      transform: rotate(0deg);
-    }
   }
 
 @media only screen and (min-width: 768px) and (max-width:1199px){
@@ -126,3 +119,5 @@
     }
 
 }
+
+
