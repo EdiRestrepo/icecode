@@ -8,9 +8,7 @@ header {
   height: 664px;
 }
 
-<<<<<<< HEAD
 
-=======
 .nav {
   &-bar {
     display: flex;
@@ -65,7 +63,6 @@ header {
     cursor: pointer;
   }
 }
-/////////////////////////////
 
 .banner {
   &-header {
@@ -129,7 +126,6 @@ header {
     right: 15px;
   }
 }
-/////////////////////////////
 
 .mix {
   margin: 100px 0 0 229px;
@@ -163,8 +159,6 @@ header {
     fill: $white;
   }
 }
-
-/////////////////////////////
 
 .img {
   &__circle-ice {
@@ -465,4 +459,4 @@ header {
     display: none;
   }
 }
->>>>>>> dev
+
