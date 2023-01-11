@@ -2,7 +2,7 @@
 /*---contacts---*/
 .contacts{
     padding: 100px 0;
-    max-width: 1200px;
+    width: 100%;
 }
 .contacts__container{
     
@@ -318,6 +318,10 @@
     }
 
     @media only screen and (min-width: 320px) and (max-width:767px){
+        .contacts {
+            padding-bottom: 0;
+            margin-bottom: -60px;
+        }
         .contacts__card{
             width: 270px;
             height: 412px;
@@ -330,6 +334,7 @@
             top:-100px;
             height: 44px;
             width: 161px ;
+            margin-bottom: 15px;
             padding: 0 ;
             &--maps{
                 height: 44px;
