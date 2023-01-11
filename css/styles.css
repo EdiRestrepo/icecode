@@ -759,19 +759,20 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery {
     width: 90%;
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .gallery {
+    margin-top: 10px;
     width: 100%;
-    margin-left: -10px;
   }
   .gallery__img {
     border-radius: 7px;
   }
   .gallery__img-1 {
     margin-top: 30px;
+    margin-left: 10px;
   }
   .gallery__img-2 {
     margin-left: 3px;
@@ -1071,8 +1072,8 @@ body {
     line-height: 26px;
   }
   #btn1,
-  #btn2,
-  #btn3 {
+#btn2,
+#btn3 {
     top: 503px;
     left: 9px;
   }
@@ -1932,6 +1933,4 @@ footer {
     text-align: center;
     color: #907E82;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
