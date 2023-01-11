@@ -296,7 +296,7 @@ main section h2:hover{
     border-radius: 24px;
     display: flex;
     height: 35em;
-    margin: 0 3em 60px 0;
+    margin: 0 0 60px 0;
     width: 224px;
     flex-direction: column;
     transition: 1s;
@@ -309,7 +309,7 @@ main section h2:hover{
       border-radius: 24px;
       display: flex;
       height: 35em;
-      margin: 0 3em 60px 0;
+      margin: 0 0 60px 0;
       width: 224px;
       flex-direction: column;
       transition: 1s;
@@ -322,7 +322,7 @@ main section h2:hover{
       border-radius: 24px;
       display: flex;
       height: 35em;
-      margin: 0 3em 60px 0;
+      margin: 0 0 60px 0;
       width: 224px;
       flex-direction: column;
       transition: 1s;
@@ -330,14 +330,17 @@ main section h2:hover{
 
     .name-product-1 {
       font-size: 20px;
+      width: 255px;
     }
 
     .name-product-2 {
       font-size: 20px;
+      width: 255px;
     }
 
     .name-product-3 {
       font-size: 20px;
+      width: 255px;
     }
 
     .information-product {
@@ -399,16 +402,16 @@ main section h2:hover{
 
   @media only screen and (min-width: 328px) and (max-width:768px) {
       .tarjet-1 {
-      position: relative;
-      cursor: pointer;
-      background-color: $strawberry;
-      border-radius: 24px;
-      display: flex;
-      height: 35em;
-      margin: 0 3em 60px 0;
-      width: 224px;
-      flex-direction: column;
-      transition: 1s;
+        position: relative;
+        cursor: pointer;
+        background-color: $strawberry;
+        border-radius: 24px;
+        display: flex;
+        height: 35em;
+        margin: 0 0 60px 0.2em;
+        width: 224px;
+        flex-direction: column;
+        transition: 1s;
       }
   
       .tarjet-2 {
@@ -418,7 +421,7 @@ main section h2:hover{
         border-radius: 24px;
         display: flex;
         height: 35em;
-        margin: 0 3em 60px 0;
+        margin: 0 0 60px 0.2em;
         width: 224px;
         flex-direction: column;
         transition: 1s;
@@ -431,10 +434,14 @@ main section h2:hover{
         border-radius: 24px;
         display: flex;
         height: 35em;
-        margin: 0 1em 0 0;
+        margin: 0 0 60px 0.2em;
         width: 224px;
         flex-direction: column;
         transition: 1s;
+      }
+
+      .titles {
+        margin-left: 1em;
       }
   
       .name-product-1 {
@@ -480,6 +487,7 @@ main section h2:hover{
       .image-1 {
         position: absolute;
         bottom: 9em;
+        margin-left: 0.2em;
         width: 224px;
         transform: translateX(4px) translateY(1.5em);
         z-index: 1;
@@ -489,6 +497,7 @@ main section h2:hover{
         position: absolute;
         bottom: 9em;
         width: 224px;
+        margin-left: 0.2em;
         transform: translateX(4px) translateY(54em);
         z-index: 1;
       }
@@ -497,6 +506,7 @@ main section h2:hover{
         position: absolute;
         bottom: 9em;
         width: 224px;
+        margin-left: 0.2em;
         transform: translateX(4px) translateY(108em);
         z-index: 1;
       }
@@ -507,7 +517,7 @@ main section h2:hover{
       }
   
       main section .products li {
-        margin-left: 3em;
+        margin-left: 1em;
         width: 224px;
         height: 560px;
       }
