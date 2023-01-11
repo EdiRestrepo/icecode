@@ -22,32 +22,47 @@
   }
 
   main section .subtitle:hover{
-    animation: rotacion 4s ;
+    animation: rotation 4s ;
     animation-direction: alternate;
 }
 
-@keyframes rotacion {
+@keyframes rotation {
     0% {
-        letter-spacing: 10px;
+        letter-spacing: 30px;
     }
 }
 
 main section h2:hover{
-  animation: rotacion 4s ;
+  animation: spacing 4s ;
   animation-direction: alternate;
 }
 
-@keyframes rotacion {
-  0% {
-      letter-spacing: 35px;
-  }
+@keyframes spacing {
+    0% {
+      letter-spacing: 50px;
+    }
 }
-
   .products {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .btn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mix-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 300ms;
   }
 
   .titles {
@@ -133,6 +148,7 @@ main section h2:hover{
     width: 368px;
     flex-direction: column;
     transition: 1s;
+    z-index: 0;
   }
 
   .tarjet-3:hover {
@@ -207,6 +223,7 @@ main section h2:hover{
 
   .image-1 {
     position: absolute;
+    top: 57em;
     bottom: 9em;
     width: 358px;
     transform: translateX(7px) translateY(0);
@@ -215,17 +232,19 @@ main section h2:hover{
 
   .image-2 {
     position: absolute;
+    top: 57em;
     bottom: 9em;
-    transform: translateX(7px) translateY(0);
     width: 358px;
+    transform: translateX(7px) translateY(0);
     z-index: 1;
   }
 
   .image-3 {
     position: absolute;
+    top: 57em;
     bottom: 9em;
-    transform: translateX(7px) translateY(0);
     width: 358px;
+    transform: translateX(7px) translateY(0);
     z-index: 1;
   }
 

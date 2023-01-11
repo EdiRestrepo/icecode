@@ -504,33 +504,39 @@ main section h3 {
 }
 
 main section .subtitle:hover {
-  -webkit-animation: rotacion 4s;
-          animation: rotacion 4s;
+  -webkit-animation: rotation 4s;
+          animation: rotation 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
-@-webkit-keyframes rotacion {
+@-webkit-keyframes rotation {
   0% {
-    letter-spacing: 10px;
+    letter-spacing: 30px;
   }
 }
 
-@keyframes rotacion {
+@keyframes rotation {
   0% {
-    letter-spacing: 10px;
+    letter-spacing: 30px;
   }
 }
 main section h2:hover {
-  -webkit-animation: rotacion 4s;
-          animation: rotacion 4s;
+  -webkit-animation: spacing 4s;
+          animation: spacing 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
-@keyframes rotacion {
+@-webkit-keyframes spacing {
   0% {
-    letter-spacing: 35px;
+    letter-spacing: 50px;
+  }
+}
+
+@keyframes spacing {
+  0% {
+    letter-spacing: 50px;
   }
 }
 .products {
@@ -538,6 +544,22 @@ main section h2:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.mix-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 300ms;
 }
 
 .titles {
@@ -617,6 +639,7 @@ main section .products li {
   width: 368px;
   flex-direction: column;
   transition: 1s;
+  z-index: 0;
 }
 
 .tarjet-3:hover {
@@ -688,6 +711,7 @@ main section .products li {
 
 .image-1 {
   position: absolute;
+  top: 57em;
   bottom: 9em;
   width: 358px;
   transform: translateX(7px) translateY(0);
@@ -696,17 +720,19 @@ main section .products li {
 
 .image-2 {
   position: absolute;
+  top: 57em;
   bottom: 9em;
-  transform: translateX(7px) translateY(0);
   width: 358px;
+  transform: translateX(7px) translateY(0);
   z-index: 1;
 }
 
 .image-3 {
   position: absolute;
+  top: 57em;
   bottom: 9em;
-  transform: translateX(7px) translateY(0);
   width: 358px;
+  transform: translateX(7px) translateY(0);
   z-index: 1;
 }
 
@@ -1047,6 +1073,12 @@ main section .products li {
   transform: scale(1.2);
   transition-duration: 500ms;
   cursor: pointer;
+}
+
+@-webkit-keyframes rotacion {
+  0% {
+    letter-spacing: 12px;
+  }
 }
 
 @keyframes rotacion {
