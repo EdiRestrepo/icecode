@@ -14,11 +14,123 @@
     </header>
 
     <main>
+<section class="contacts">
+    <div class="contacts__container">
+        <ul class="contacts__list">
+            <li class="contacts__card"> 
+                <div class="cards__data">
+                    <p class="cards__data cards__data--title">CAFE</p>             
+                    <p class="cards__data cards__data--subtitle">Chicago</p>
+                    <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <div class="cards__data">
+                    <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                    <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                    <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                    <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                </div>
+               <div class="cards__data">
+                    <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284</p>
+                    <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                </div>
+            </li>
+            <li class="contacts__card"> 
+                <div class="cards__data">
+                    <p class="cards__data cards__data--title cards__data--title--Store">FOOD TRUCK</p>             
+                    <p class="cards__data cards__data--subtitle">Los Angeles</p>
+                    <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <div class="cards__data">
+                    <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                    <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                    <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                    <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                </div>
+                <div class="cards__data">
+                    <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284</p>
+                    <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                </div>
+            </li>
+            <li class="contacts__card"> 
+                <div class="cards__data">
+                    <p class="cards__data cards__data--title">CAFE</p>             
+                    <p class="cards__data cards__data--subtitle">New Yrok</p>
+                    <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <div class="cards__data">
+                    <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                    <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                    <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                    <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                </div>
+                <div class="cards__data">
+                    <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284</p>
+                    <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                </div>
+            </li>
+    </div>
 
+    <div class="contacts__button">
+        <button type="button" class="button button--location" data-modal-open-maps>Our Locations</button> 
+        <svg class="icon" width="4.13" height="8">
+            <use xlink:href="./images-contacts/icons.svg#icon-button"></use>
+            </svg>    
+     
+      
+        <button type="button" class="button button--franchise" data-modal-open-contact>Franchise</button> 
+                
+                
+                  
+    </div>
+                    <!--- maps modal--->
+                    <div class="backdrop is-hidden" data-modal-maps>
+                        <div class="contacts__modal">
+                            <button class="contacts__close" data-modal-close-maps>X</button>
+                            <div class="contacts__window">
+                                <h3 class="contacts__location contacts__window--title">We will be glad to see you</h3>
+                                <iframe class="contacts__map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.3928070812!2d-74.24789584881646!3d4.648625942144899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1673148525191!5m2!1ses!2sco"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <h4 class="contacts__location contacts__window--subtitle">yevhen konovalets street, 36 kyiv, 02000</h4>
+                                <button type="button" class="button button--maps">Open in Gooogle maps</button> 
+                            </div>    
+                        </div>
+                    </div> 
+                    <!--- form modal--->
+                                
+                <div class="backdrop is-hidden" data-modal-contact>
+                    <div class="contacts__modal contacts__modal--franchise">
+                        <button class="contacts__close" data-modal-close-contact>X</button>
+                        
+                        <div class="contacts__window">
+                            <h3 class="contacts__window contacts__window--title">Leave your details and maybe we will call you back</details></h3>
+                            <form class="contacts__form" name="form" autocomplete="on" >
+                                
+                                <label class="contacts__lable" for="input-name">Name</label>
+                                        <input class="contacts-input" type="text" name="name" id="input-name" required />
+                                <label class="contacts__lable" for="input-phone">Phone number</label>
+                                        <input class="contacts-input" type="tel" name="phone_number" id="input-phone"/ required>
+                                <label class="contacts__lable" for="input-email">Email</label>
+                                        <input class="contacts-input" type="email" name="email" id="input-email"/ required>
+                                <label class="contacts__lable">a few words, my darling</label> 
+                                        <textarea class="textarea" name="feedback" rows="7" placeholder="Write here."></textarea>
+                                
+                                
+                              
+                                <button class="button button--submit"type="submit">Send</button>
+                            </form>
+                            
+            
+                        </div> 
+                          
+                    </div>
+                </div> 
+
+</section>
     </main>
 
     <footer>
 
     </footer>
+<script src="./js/modalmaps.js"></script>
+<script src="./js/modalcontact.js"></script>
 </body>
 </html>
