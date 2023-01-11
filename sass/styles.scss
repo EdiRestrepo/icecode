@@ -14,9 +14,7 @@
     margin: 0;
     box-sizing: border-box; //esto asegura que el relleno y el borde estan incluidos en el ancho total y altura de los elementos
     text-decoration: none;
-    list-style: none;
-    background: $dark-pink;
-
+    list-style: none;  
   }
   
   /*Todo el contenido*/
@@ -26,7 +24,8 @@
 
   @import 'components/header';
   
-
+ @import 'components/footer';
+ 
 
   
 

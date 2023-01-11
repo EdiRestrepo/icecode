@@ -1,34 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import "node_modules/modern-normalize/modern-normalize.css";
-/*Todo el contenido*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
+@import '../utils/variables';
 
-/*Todo el contenido*/
 footer {
-  background-color: #FFF5F6;
+  background-color: $background-pink;
   padding: 0px 22px 0px 20px;
-}
-
+} 
 .footer__columns {
   display: flex;
   align-items: center;
   justify-content: space-between;
+} 
+.footer__titles{
+  justify-content: flex-start
 }
-
-.footer__titles {
-  justify-content: flex-start;
-}
-
 .footer__big {
   margin-top: 7px;
-  color: #FFA5BA;
+  color: $light-pink;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -44,21 +30,20 @@ footer {
   transition-property: transform;
   transform: scale(1.3);
   transition-duration: 1000ms;
-  transform: translate(50px);
+  transform: translate( 50px);
 }
 
 .footer__big:hover .big-text-increase {
-  color: #D41443;
+  color: $dark-pink;
   transition-property: transform;
   transform: scale(1.3);
   transition-duration: 1000ms;
   transform: translate(-200px, 25px);
 }
-
 .footer__bigger-text {
   margin-top: 17px;
   width: 490px;
-  color: #FFA5BA;
+  color: $light-pink;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -69,87 +54,73 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
 .bigger-text {
   display: flex;
 }
-
 .bigger-text-increase:hover {
-  color: #D41443;
+  color: $dark-pink;
   transition-property: transform;
   transform: scale(1.3);
   transition-duration: 1000ms;
 }
-
-.footer__item {
-  display: flex;
-  justify-content: flex-end;
+.footer__item{
+  display:flex;
+  justify-content: flex-end
 }
-
 .footer__github {
   width: 34px;
   height: 34px;
   margin-top: 43px;
   margin-right: 20px;
   border-radius: 50%;
-  background: #FFA5BA;
+  background: $light-pink;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.footer__github:hover {
-  background: #D41443;
+.footer__github:hover{
+  background: $dark-pink;
 }
-
-.footer__icon1 {
+.footer__icon1{
   fill: white;
 }
-
-.footer__telegram {
+.footer__telegram{
   width: 34px;
   height: 34px;
   margin-top: 43px;
   margin-right: 20px;
   border-radius: 50%;
-  background: #FFA5BA;
+  background: $light-pink;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.footer__telegram:hover {
-  background: #D41443;
+.footer__telegram:hover{
+  background: $dark-pink;
 }
-
 .footer__icon2 {
-  fill: white;
+  fill: white; 
 }
-
 .footer__facebook {
   width: 34px;
   height: 34px;
   margin-top: 43px;
   margin-right: 0px;
   border-radius: 50%;
-  background: #FFA5BA;
+  background: $light-pink;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.footer__facebook:hover {
-  background: #D41443;
+.footer__facebook:hover{
+  background: $dark-pink;
 }
-
 .footer__icon3 {
-  fill: white;
+  fill: white; 
 }
-
 .footer__contact {
   display: flex;
 }
-
 .footer__contact-text {
   margin-top: 46px;
   font-family: "DM Sans";
@@ -157,11 +128,12 @@ footer {
   font-weight: 700;
   font-size: 12px;
   line-height: 22px;
+
   text-align: right;
-  color: #000000;
+
+  color: $black;
   align-self: flex-end;
 }
-
 .footer__contact-tel {
   margin-top: 46px;
   font-family: "DM Sans";
@@ -170,7 +142,7 @@ footer {
   font-size: 15px;
   line-height: 22px;
   text-align: right;
-  color: #D41443;
+  color: $dark-pink;  
   align-self: flex-end;
 }
 
@@ -178,12 +150,10 @@ footer {
   transform: scale(1.3);
   transition-duration: 1000ms;
 }
-
 .footer__abyss {
   margin-top: 65px;
   border-top: #e1e1e1 solid 1px;
 }
-
 .footer__abyss--text {
   margin: 22px auto 25px auto;
   font-family: "DM Sans";
@@ -191,189 +161,201 @@ footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
+
   text-align: center;
-  color: #907E82;
+
+  color: $gray;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  footer {
-    background-color: #FFF5F6;
-    padding: 0px 20px 0px 20px;
-  }
-  .footer__columns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer__titles {
-    justify-content: flex-start;
-  }
-  .footer__big {
-    margin-top: 7px;
-    color: #FFA5BA;
-    font-family: "Titan One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .footer__big:hover .big-text {
-    transition-property: transform;
-    transform: scale(1.3);
-    transition-duration: 1000ms;
-    transform: translate(30px);
-  }
-  .footer__big:hover .big-text-increase {
-    color: #D41443;
-    transition-property: transform;
-    transform: scale(1.3);
-    transition-duration: 1000ms;
-    transform: translate(135px, 5px);
-  }
-  .footer__bigger-text {
-    margin-top: 17px;
-    color: #FFA5BA;
-    font-family: "Titan One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .bigger-text {
-    display: flex;
-  }
-  .bigger-text-increase:hover {
-    color: #D41443;
-    transition-property: transform;
-    transform: scale(1.3);
-    transition-duration: 1000ms;
-  }
-  .footer__item {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .footer__github {
-    width: 34px;
-    height: 34px;
-    margin-top: 43px;
-    margin-right: 20px;
-    border-radius: 50%;
-    background: #FFA5BA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__github:hover {
-    background: #D41443;
-  }
-  .footer__icon1 {
-    fill: white;
-  }
-  .footer__telegram {
-    width: 34px;
-    height: 34px;
-    margin-top: 43px;
-    margin-right: 20px;
-    border-radius: 50%;
-    background: #FFA5BA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__telegram:hover {
-    background: #D41443;
-  }
-  .footer__icon2 {
-    fill: white;
-  }
-  .footer__facebook {
-    width: 34px;
-    height: 34px;
-    margin-top: 43px;
-    margin-right: 0px;
-    border-radius: 50%;
-    background: #FFA5BA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__facebook:hover {
-    background: #D41443;
-  }
-  .footer__icon3 {
-    fill: white;
-  }
-  .footer__contact {
-    display: flex;
-  }
-  .footer__contact-text {
-    margin-top: 46px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 22px;
-    text-align: right;
-    color: #000000;
-    align-self: flex-end;
-  }
-  .footer__contact-tel {
-    margin-top: 46px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: right;
-    color: #D41443;
-    align-self: flex-end;
-  }
-  .efecto:hover {
-    transform: scale(1.3);
-    transition-duration: 1000ms;
-  }
-  .footer__abyss {
-    margin-top: 65px;
-    border-top: #e1e1e1 solid 1px;
-  }
-  .footer__abyss--text {
-    margin: 22px auto 25px auto;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-    color: #907E82;
-  }
+
+@media only screen and (min-width: 768px) and (max-width:1199px){
+
+footer {
+  background-color: $background-pink;
+  padding: 0px 20px 0px 20px;
+} 
+.footer__columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.footer__titles{
+  justify-content: flex-start
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+.footer__big {
+  margin-top: 7px;
+  color: $light-pink;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer__big:hover .big-text {
+  transition-property: transform;
+  transform: scale(1.3);
+  transition-duration: 1000ms;
+  transform: translate(30px);
+}
+
+.footer__big:hover .big-text-increase {
+  color: $dark-pink;
+  transition-property: transform;
+  transform: scale(1.3);
+  transition-duration: 1000ms;
+  transform: translate(135px, 5px);
+}
+.footer__bigger-text {
+  margin-top: 17px;
+  color: $light-pink;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.bigger-text {
+  display: flex;
+}
+.bigger-text-increase:hover {
+  color: $dark-pink;
+  transition-property: transform;
+  transform: scale(1.3);
+  transition-duration: 1000ms;
+}
+.footer__item{
+  display:flex;
+  justify-content: flex-end
+}
+.footer__github {
+  width: 34px;
+  height: 34px;
+  margin-top: 43px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: $light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__github:hover{
+  background: $dark-pink;
+}
+.footer__icon1{
+  fill: white;
+}
+.footer__telegram{
+  width: 34px;
+  height: 34px;
+  margin-top: 43px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: $light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__telegram:hover{
+  background: $dark-pink;
+}
+.footer__icon2 {
+  fill: white; 
+}
+.footer__facebook {
+  width: 34px;
+  height: 34px;
+  margin-top: 43px;
+  margin-right: 0px;
+  border-radius: 50%;
+  background: $light-pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__facebook:hover{
+  background: $dark-pink;
+}
+.footer__icon3 {
+  fill: white; 
+}
+.footer__contact {
+  display: flex;
+}
+.footer__contact-text {
+  margin-top: 46px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 22px;
+
+  text-align: right;
+
+  color: $black;
+  align-self: flex-end;
+}
+.footer__contact-tel {
+  margin-top: 46px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: $dark-pink;  
+  align-self: flex-end;
+}
+
+.efecto:hover {
+  transform: scale(1.3);
+  transition-duration: 1000ms;
+}
+.footer__abyss {
+  margin-top: 65px;
+  border-top: #e1e1e1 solid 1px;
+}
+.footer__abyss--text {
+  margin: 22px auto 25px auto;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: $gray;
+}
+}
+@media only screen and (min-width: 320px) and (max-width:767px){
+
   footer {
-    background-color: #FFF5F6;
+    background-color: $background-pink;
     padding: 0px 22px 0px 20px;
-  }
+  } 
   .footer__columns {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  .footer__titles {
-    justify-content: flex-start;
+  } 
+  .footer__titles{
+    justify-content: flex-start
   }
   .footer__big {
     margin-top: 7px;
     width: 275px;
-    color: #FFA5BA;
+    color: $light-pink;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -384,14 +366,16 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  
   .footer__big:hover .big-text {
     transition-property: transform;
     transform: scale(1.3);
     transition-duration: 1000ms;
     transform: translate(30px);
   }
+  
   .footer__big:hover .big-text-increase {
-    color: #D41443;
+    color: $dark-pink;
     transition-property: transform;
     transform: scale(1.3);
     transition-duration: 1000ms;
@@ -400,7 +384,7 @@ footer {
   .footer__bigger-text {
     margin-top: 17px;
     width: 200px;
-    color: #FFA5BA;
+    color: $light-pink;
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
@@ -415,14 +399,14 @@ footer {
     display: flex;
   }
   .bigger-text-increase:hover {
-    color: #D41443;
+    color: $dark-pink;
     transition-property: transform;
     transform: scale(1.3);
     transition-duration: 1000ms;
   }
-  .footer__item {
-    display: flex;
-    justify-content: flex-end;
+  .footer__item{
+    display:flex;
+    justify-content: flex-end
   }
   .footer__github {
     width: 34px;
@@ -430,33 +414,33 @@ footer {
     margin-top: 43px;
     margin-right: 20px;
     border-radius: 50%;
-    background: #FFA5BA;
+    background: $light-pink;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer__github:hover {
-    background: #D41443;
+  .footer__github:hover{
+    background: $dark-pink;
   }
-  .footer__icon1 {
+  .footer__icon1{
     fill: white;
   }
-  .footer__telegram {
+  .footer__telegram{
     width: 34px;
     height: 34px;
     margin-top: 43px;
     margin-right: 20px;
     border-radius: 50%;
-    background: #FFA5BA;
+    background: $light-pink;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer__telegram:hover {
-    background: #D41443;
+  .footer__telegram:hover{
+    background: $dark-pink;
   }
   .footer__icon2 {
-    fill: white;
+    fill: white; 
   }
   .footer__facebook {
     width: 34px;
@@ -464,16 +448,16 @@ footer {
     margin-top: 43px;
     margin-right: 0px;
     border-radius: 50%;
-    background: #FFA5BA;
+    background: $light-pink;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer__facebook:hover {
-    background: #D41443;
+  .footer__facebook:hover{
+    background: $dark-pink;
   }
   .footer__icon3 {
-    fill: white;
+    fill: white; 
   }
   .footer__contact {
     display: flex;
@@ -485,8 +469,10 @@ footer {
     font-weight: 700;
     font-size: 11px;
     line-height: 22px;
+  
     text-align: right;
-    color: #000000;
+  
+    color: $black;
     align-self: flex-end;
   }
   .footer__contact-tel {
@@ -497,9 +483,10 @@ footer {
     font-size: 12px;
     line-height: 22px;
     text-align: right;
-    color: #D41443;
+    color: $dark-pink;  
     align-self: flex-end;
   }
+  
   .efecto:hover {
     transform: scale(1.3);
     transition-duration: 1000ms;
@@ -515,7 +502,10 @@ footer {
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
+  
     text-align: center;
-    color: #907E82;
+  
+    color: $gray;
   }
-}/*# sourceMappingURL=styles.css.map */
+
+}
