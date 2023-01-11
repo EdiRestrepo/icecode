@@ -1,0 +1,516 @@
+  @import "../utils/variables";
+  main section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main section h2 {
+    color: $dark-pink;
+    font-family:  Titan one;
+    font-size: 58px;
+    letter-spacing: 0.06em
+  }
+
+  main section h3 {
+    color: $light-pink;
+    font-family: Titan one;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    
+  }
+
+  main section .subtitle:hover{
+    animation: rotacion 4s ;
+    animation-direction: alternate;
+}
+
+@keyframes rotacion {
+    0% {
+        letter-spacing: 10px;
+    }
+}
+
+main section h2:hover{
+  animation: rotacion 4s ;
+  animation-direction: alternate;
+}
+
+@keyframes rotacion {
+  0% {
+      letter-spacing: 35px;
+  }
+}
+
+  .products {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .titles {
+    align-items: center;
+    display: flex;
+    margin-top: 8em;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main section p {
+    color: $white;
+  }
+
+  main section .products li {
+    margin-left: 3em;
+    margin-top: 18em;
+  }
+
+  .information-product {
+    cursor: pointer;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    width: 245px;
+    margin-top: 5em;
+    margin-left: 4.3em;
+    text-align: center;
+  }
+
+  .tarjet-1 {
+    position: relative;
+    cursor: pointer;
+    background-color: $strawberry;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 0;
+    width: 368px;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-1:hover {
+    transition: 1s;
+    background-color: rgb(224, 145, 158);
+    box-shadow: 5px 4px 5px rgb(228, 165, 176),
+    4px 3px 4px rgb(243, 177, 188),
+    3px 2px 3px rgb(252, 197, 206),
+    2px 1px 2px rgb(255, 209, 217);
+  }
+
+  .tarjet-2 {
+    position: relative;
+    cursor: pointer;
+    background-color: $coffee;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 0;
+    width: 368px;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-2:hover {
+    transition: 1s;
+    background-color: #cfae7f;
+    box-shadow: 5px 4px 5px #dfb983,
+    4px 3px 4px #e9c592,
+    3px 2px 3px #ffd69c,
+    2px 1px 2px #F0D1A5;
+  }
+
+  .tarjet-3 {
+    position: relative;
+    cursor: pointer;
+    background-color: $lime;
+    border-radius: 24px;
+    display: flex;
+    height: 40em;
+    margin: 0 3em 60px 0;
+    width: 368px;
+    flex-direction: column;
+    transition: 1s;
+  }
+
+  .tarjet-3:hover {
+    transition: 1s;
+    background-color: #9fce62;
+    box-shadow: 5px 4px 5px #b8e480,
+    4px 3px 4px #cbf891,
+    3px 2px 3px #c7ec96,
+    2px 1px 2px #aecc88;
+  }
+
+  #arrow {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  #bottom {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-1:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-1:hover #bottom {
+    fill: $dark-pink;
+  }
+
+  .tarjet-2:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-2:hover #bottom {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  .tarjet-3:hover #arrow {
+    fill: $white;
+    transition: 500ms;
+  }
+
+  .tarjet-3:hover #bottom {
+    fill: $dark-pink;
+    transition: 500ms;
+  }
+
+  .products svg {
+    cursor: pointer;
+    transition: 500ms;
+    transform: translateX(9.8em) translateY(5em);
+  }
+
+  .tarjet-1:hover svg {
+    border-radius: 4px;
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
+  }
+
+  .tarjet-2:hover svg {
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
+  }
+
+  .tarjet-3:hover svg {
+    transition: 500ms;
+    transform: rotate(-90deg) translateX(-5em) translateY(9.8em);
+  }
+
+  .image-1 {
+    position: absolute;
+    bottom: 9em;
+    width: 358px;
+    transform: translateX(7px) translateY(0);
+    z-index: 1;
+  }
+
+  .image-2 {
+    position: absolute;
+    bottom: 9em;
+    transform: translateX(7px) translateY(0);
+    width: 358px;
+    z-index: 1;
+  }
+
+  .image-3 {
+    position: absolute;
+    bottom: 9em;
+    transform: translateX(7px) translateY(0);
+    width: 358px;
+    z-index: 1;
+  }
+
+  .name-product-1 {
+    color: $white;
+    font-family: Titan one;
+    font-weight: 400;
+    font-size: 30px;
+    width: 368px;
+    margin-top: 7em;
+    margin-left: 3.2em;
+  }
+
+  .name-product-2 {
+    color: $white;
+    font-family: Titan one;
+    font-weight: 400;
+    width: 368px;
+    font-size: 30px;
+    margin-top: 7em;
+    margin-left: 3em;
+  }
+
+  .name-product-3 {
+    color: $white;
+    font-family: Titan one;
+    font-weight: 400;
+    font-size: 30px;
+    width: 368px;
+    margin-top: 7em;
+    margin-left: 2.6em;
+  }
+
+  .dot {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width:1305px) {
+    .tarjet-1 {
+      position: relative;
+      cursor: pointer;
+      background-color: $strawberry;
+      border-radius: 24px;
+      display: flex;
+      height: 35em;
+      margin: 0 0 60px 0;
+      width: 224px;
+      flex-direction: column;
+      transition: 1s;
+    }
+
+    .tarjet-2 {
+      position: relative;
+      cursor: pointer;
+      background-color: $coffee;
+      border-radius: 24px;
+      display: flex;
+      height: 35em;
+      margin: 0 0 60px 0;
+      width: 224px;
+      flex-direction: column;
+      transition: 1s;
+    }
+
+    .tarjet-3 {
+      position: relative;
+      cursor: pointer;
+      background-color: $lime;
+      border-radius: 24px;
+      display: flex;
+      height: 35em;
+      margin: 0 0 60px 0;
+      width: 224px;
+      flex-direction: column;
+      transition: 1s;
+    }
+
+    .name-product-1 {
+      font-size: 20px;
+      width: 255px;
+    }
+
+    .name-product-2 {
+      font-size: 20px;
+      width: 255px;
+    }
+
+    .name-product-3 {
+      font-size: 20px;
+      width: 255px;
+    }
+
+    main section .products li {
+      margin-left: 1em;
+      margin-top: 18em;
+    }
+
+    .information-product {
+      font-size: 14px;
+      width: 160px;
+      margin-left: 2.5em;
+    }
+
+    .products svg {
+      cursor: pointer;
+      transition: 500ms;
+      transform: translateX(6em) translateY(5em);
+    }
+
+    .tarjet-1:hover svg {
+      border-radius: 4px;
+      transition: 500ms;
+      transform: rotate(-90deg) translateX(-5em) translateY(6em);
+    }
+  
+    .tarjet-2:hover svg {
+      transition: 500ms;
+      transform: rotate(-90deg) translateX(-5em) translateY(6em);
+    }
+  
+    .tarjet-3:hover svg {
+      transition: 500ms;
+      transform: rotate(-90deg) translateX(-5em) translateY(6em);
+    }
+
+    .image-1 {
+      position: absolute;
+      bottom: 9em;
+      width: 224px;
+      transform: translateX(4px) translateY(2.5em);
+      z-index: 1;
+    }
+  
+    .image-2 {
+      position: absolute;
+      bottom: 9em;
+      width: 224px;
+      transform: translateX(4px) translateY(2.5em);
+      z-index: 1;
+    }
+  
+    .image-3 {
+      position: absolute;
+      bottom: 9em;
+      width: 224px;
+      transform: translateX(4px) translateY(2.5em);
+      z-index: 1;
+    }
+
+    .subtitle {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width:767px) {
+      .tarjet-1 {
+        position: relative;
+        cursor: pointer;
+        background-color: $strawberry;
+        border-radius: 24px;
+        display: flex;
+        height: 35em;
+        margin: 0 0 60px 0.2em;
+        width: 280px;
+        flex-direction: column;
+        transition: 1s;
+      }
+  
+      .tarjet-2 {
+        position: relative;
+        cursor: pointer;
+        background-color: $coffee;
+        border-radius: 24px;
+        display: flex;
+        height: 35em;
+        margin: 0 0 60px 0.2em;
+        width: 280px;
+        flex-direction: column;
+        transition: 1s;
+      }
+  
+      .tarjet-3 {
+        position: relative;
+        cursor: pointer;
+        background-color: $lime;
+        border-radius: 24px;
+        display: flex;
+        height: 35em;
+        margin: 0 0 60px 0.2em;
+        width: 280px;
+        flex-direction: column;
+        transition: 1s;
+      }
+
+      .titles {
+        margin-left: 5.3em;
+      }
+  
+      .name-product-1 {
+        font-size: 20px;
+        margin-left: 4.1em;
+      }
+  
+      .name-product-2 {
+        font-size: 20px;
+        margin-left: 4em;
+      }
+  
+      .name-product-3 {
+        font-size: 20px;
+        margin-left: 3.8em;
+      }
+  
+      .information-product {
+        font-size: 14px;
+        width: 160px;
+        margin-left: 4.5em;
+      }
+  
+      .products svg {
+        cursor: pointer;
+        transition: 500ms;
+        transform: translateX(7.8em) translateY(5em);
+      }
+  
+      .tarjet-1:hover svg {
+        border-radius: 4px;
+        transition: 500ms;
+        transform: rotate(-90deg) translateX(-5em) translateY(6em);
+      }
+    
+      .tarjet-2:hover svg {
+        transition: 500ms;
+        transform: rotate(-90deg) translateX(-5em) translateY(6em);
+      }
+    
+      .tarjet-3:hover svg {
+        transition: 500ms;
+        transform: rotate(-90deg) translateX(-5em) translateY(6em);
+      }
+  
+      .image-1 {
+        position: absolute;
+        bottom: 9em;
+        margin-left: 0.2em;
+        width: 224px;
+        transform: translateX(1.8em) translateY(1.3em);
+        z-index: 1;
+      }
+    
+      .image-2 {
+        position: absolute;
+        bottom: 9em;
+        width: 224px;
+        margin-left: 0.2em;
+        transform: translateX(1.8em) translateY(53.5em);
+        z-index: 1;
+      }
+    
+      .image-3 {
+        position: absolute;
+        bottom: 9em;
+        width: 224px;
+        margin-left: 0.2em;
+        transform: translateX(1.8em) translateY(107em);
+        z-index: 1;
+      }
+
+      .products {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      main section .products li {
+        margin-left: 1em;
+        width: 224px;
+        height: 560px;
+      }
+
+      .titles h2 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+  }
