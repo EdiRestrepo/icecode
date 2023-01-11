@@ -587,7 +587,6 @@ header {
     width: 280px;
   }
 }
-
 .advantages {
   background: #FFF5F6;
   width: 100%;
@@ -685,6 +684,117 @@ header {
     padding-top: 13px;
   }
 }
+body {
+  background: #FFF5F6;
+}
 
-/*# sourceMappingURL=styles.css.map */
+.gallery {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+.gallery__img {
+  border-radius: 20px;
+  width: 100%;
+}
+.gallery__img:hover {
+  transform: scale(1.15);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+.gallery__img-1 {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.gallery__img-2 {
+  margin-left: 7px;
+  margin-bottom: 7px;
+}
+.gallery__img-3 {
+  margin-left: 7px;
+}
+.gallery__img-4 {
+  margin-top: -90px;
+  margin-left: 7px;
+}
+.gallery__img-5 {
+  margin-left: 7px;
+  margin-top: 6px;
+  width: 50%;
+}
+.gallery__img-6 {
+  margin-top: 8px;
+  margin-left: 7px;
+}
+.gallery__img-7 {
+  margin-left: 7px;
+  margin-top: 6px;
+}
+.gallery__img-8 {
+  margin-top: -25px;
+  margin-left: 7px;
+}
+.gallery__img-9 {
+  margin-top: 4px;
+  margin-left: 7px;
+}
+.gallery__img-10 {
+  margin-left: 7px;
+  margin-top: 70px;
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    width: 90%;
+    margin-left: 25px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .gallery {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .gallery__img {
+    border-radius: 7px;
+  }
+  .gallery__img-1 {
+    margin-top: 30px;
+  }
+  .gallery__img-2 {
+    margin-left: 3px;
+  }
+  .gallery__img-3 {
+    margin-left: 3px;
+    margin-top: -9px;
+  }
+  .gallery__img-4 {
+    margin-left: 3px;
+    margin-top: -35px;
+  }
+  .gallery__img-5 {
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+  .gallery__img-6 {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  .gallery__img-7 {
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+  .gallery__img-8 {
+    margin-top: -6px;
+    margin-left: 3px;
+  }
+  .gallery__img-9 {
+    margin-top: -1px;
+    margin-left: 3px;
+  }
+  .gallery__img-10 {
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+}/*# sourceMappingURL=styles.css.map */
