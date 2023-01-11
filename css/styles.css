@@ -14,7 +14,7 @@
 /*Todo el contenido*/
 #customer-reviews {
   width: 100%;
-  height: 350px;
+  height: 590px;
   font-family: "DM Sans";
   padding-top: 120px;
   background-color: #ffffff;
@@ -194,7 +194,9 @@
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   #customer-reviews {
     width: 768px;
-    margin-top: 60px;
+    height: 502px;
+    margin-top: 0px;
+    padding-top: 60px;
   }
   .review-card {
     width: 620px;
@@ -234,8 +236,9 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #customer-reviews {
     width: 320px;
-    height: 514px;
-    margin-top: 60px;
+    height: 634px;
+    margin-top: 0px;
+    padding-top: 60px;
   }
   .review-card {
     width: 280px;
