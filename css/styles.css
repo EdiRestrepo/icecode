@@ -915,7 +915,7 @@ header {
     flex-direction: column;
   }
   .set-products .products li {
-    margin-left: -2em;
+    margin-left: -4em;
     margin-top: 12em;
     width: 224px;
     height: 560px;
@@ -1237,14 +1237,16 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery {
-    width: 90%;
-    margin-left: 25px;
+    width: 100%;
+  }
+  .gallery__img-10 {
+    margin-right: 24px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .gallery {
     width: 100%;
-    margin-left: -10px;
+    margin-top: 20px;
   }
   .gallery__img {
     border-radius: 7px;
@@ -1286,6 +1288,7 @@ body {
   .gallery__img-10 {
     margin-top: 30px;
     margin-left: 3px;
+    margin-right: 21px;
   }
 }
 #customer-reviews {
@@ -1550,8 +1553,8 @@ body {
     line-height: 26px;
   }
   #btn1,
-  #btn2,
-  #btn3 {
+#btn2,
+#btn3 {
     top: 503px;
     left: 9px;
   }
@@ -1559,7 +1562,7 @@ body {
 /*---contacts---*/
 .contacts {
   padding: 100px 0;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .contacts__container {
@@ -1841,6 +1844,10 @@ body {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .contacts {
+    padding-bottom: 0;
+    margin-bottom: -60px;
+  }
   .contacts__card {
     width: 270px;
     height: 412px;
@@ -1853,6 +1860,7 @@ body {
     top: -100px;
     height: 44px;
     width: 161px;
+    margin-bottom: 15px;
     padding: 0;
   }
   .button--maps {
@@ -2411,6 +2419,4 @@ footer {
     text-align: center;
     color: #907E82;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
