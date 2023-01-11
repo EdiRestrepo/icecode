@@ -218,122 +218,87 @@ header {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-animation: burbujas 3s linear infinite;
-          animation: burbujas 3s linear infinite;
+  animation: burbujas 3s linear infinite;
 }
 
 .burbuja:nth-child(1) {
   width: 80px;
   height: 80px;
   left: 5%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-duration: 3s;
+  animation-delay: 3s;
 }
 
 .burbuja:nth-child(2) {
   width: 100px;
   height: 100px;
   left: 35%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-duration: 3s;
+  animation-delay: 5s;
 }
 
 .burbuja:nth-child(3) {
   width: 20px;
   height: 20px;
   left: 15%;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
 }
 
 .burbuja:nth-child(4) {
   width: 50px;
   height: 50px;
   left: 90%;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-duration: 6s;
+  animation-delay: 3s;
 }
 
 .burbuja:nth-child(5) {
   width: 70px;
   height: 70px;
   left: 65%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 .burbuja:nth-child(6) {
   width: 20px;
   height: 20px;
   left: 50%;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-duration: 4s;
+  animation-delay: 5s;
 }
 
 .burbuja:nth-child(7) {
   width: 20px;
   height: 20px;
   left: 50%;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-duration: 4s;
+  animation-delay: 5s;
 }
 
 .burbuja:nth-child(8) {
   width: 100;
   height: 100px;
   left: 52%;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-duration: 5s;
+  animation-delay: 5s;
 }
 
 .burbuja:nth-child(9) {
   width: 65px;
   height: 65px;
   left: 51%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
 
 .burbuja:nth-child(10) {
   width: 80px;
   height: 80px;
   left: 15%;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-@-webkit-keyframes burbujas {
-  0% {
-    bottom: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    bottom: 100vh;
-    opacity: 0;
-  }
+  animation-duration: 3s;
+  animation-delay: 4s;
 }
 
 @keyframes burbujas {
@@ -505,16 +470,8 @@ header {
 }
 
 .set-products .set-products__subtitle:hover {
-  -webkit-animation: rotation 4s;
-          animation: rotation 4s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes rotation {
-  0% {
-    letter-spacing: 30px;
-  }
+  animation: rotation 4s;
+  animation-direction: alternate;
 }
 
 @keyframes rotation {
@@ -523,16 +480,8 @@ header {
   }
 }
 .set-products__h2:hover {
-  -webkit-animation: spacing 4s;
-          animation: spacing 4s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes spacing {
-  0% {
-    letter-spacing: 50px;
-  }
+  animation: spacing 4s;
+  animation-direction: alternate;
 }
 
 @keyframes spacing {
@@ -991,10 +940,8 @@ header {
   padding-top: 60px;
 }
 .about__title:hover {
-  -webkit-animation: rotacion 4s;
-          animation: rotacion 4s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: rotacion 4s;
+  animation-direction: alternate;
 }
 .about__subtitle {
   color: #FFA5BA;
@@ -1007,10 +954,8 @@ header {
   margin-top: 16px;
 }
 .about__subtitle:hover {
-  -webkit-animation: rotacion 4s;
-          animation: rotacion 4s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: rotacion 4s;
+  animation-direction: alternate;
 }
 .about__texto {
   padding: 10% 15% 10% 15%;
@@ -1064,12 +1009,6 @@ header {
   transform: scale(1.2);
   transition-duration: 500ms;
   cursor: pointer;
-}
-
-@-webkit-keyframes rotacion {
-  0% {
-    letter-spacing: 12px;
-  }
 }
 
 @keyframes rotacion {
@@ -1160,14 +1099,10 @@ header {
 }
 .advantages-list .advantages-list__svg {
   fill: #FFA5BA;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .advantages-list .advantages-list__number {
   color: #D41443;
@@ -1191,15 +1126,6 @@ header {
 
 .advantages-list:hover .advantages-list__item {
   transform: rotate(360deg);
-}
-
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spin {
@@ -1481,15 +1407,6 @@ body {
   /* opacity: 0; truco para ocultar los Radio button y poder ponerle los íconos que hay en figma */
 }
 
-@-webkit-keyframes flipcard {
-  0% {
-    transform: perspective(800px) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(800px) rotateY(180deg);
-  }
-}
-
 @keyframes flipcard {
   0% {
     transform: perspective(800px) rotateY(0deg);
@@ -1504,40 +1421,28 @@ body {
 } */
 #btn1:checked ~ .first {
   opacity: 1;
-  -webkit-animation-name: flipcard;
-          animation-name: flipcard;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-name: flipcard;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   animation-direction: reverse;
 }
 
 #btn2:checked ~ .second {
   opacity: 1;
-  -webkit-animation-name: flipcard;
-          animation-name: flipcard;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-name: flipcard;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   animation-direction: reverse;
 }
 
 #btn3:checked ~ .third {
   opacity: 1;
-  -webkit-animation-name: flipcard;
-          animation-name: flipcard;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-name: flipcard;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   animation-direction: reverse;
 }
 
@@ -1645,8 +1550,8 @@ body {
     line-height: 26px;
   }
   #btn1,
-#btn2,
-#btn3 {
+  #btn2,
+  #btn3 {
     top: 503px;
     left: 9px;
   }
@@ -1751,8 +1656,6 @@ body {
   height: 44px;
   justify-content: center;
   margin-top: 1%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   cursor: pointer;
   position: relative;
@@ -2508,4 +2411,6 @@ footer {
     text-align: center;
     color: #907E82;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
