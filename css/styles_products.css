@@ -323,6 +323,10 @@ main section .products li {
     font-size: 20px;
     width: 255px;
   }
+  main section .products li {
+    margin-left: 1em;
+    margin-top: 18em;
+  }
   .information-product {
     font-size: 14px;
     width: 160px;
@@ -371,7 +375,7 @@ main section .products li {
     font-size: 22px;
   }
 }
-@media only screen and (min-width: 328px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .tarjet-1 {
     position: relative;
     cursor: pointer;
@@ -380,7 +384,7 @@ main section .products li {
     display: flex;
     height: 35em;
     margin: 0 0 60px 0.2em;
-    width: 224px;
+    width: 280px;
     flex-direction: column;
     transition: 1s;
   }
@@ -392,7 +396,7 @@ main section .products li {
     display: flex;
     height: 35em;
     margin: 0 0 60px 0.2em;
-    width: 224px;
+    width: 280px;
     flex-direction: column;
     transition: 1s;
   }
@@ -404,31 +408,34 @@ main section .products li {
     display: flex;
     height: 35em;
     margin: 0 0 60px 0.2em;
-    width: 224px;
+    width: 280px;
     flex-direction: column;
     transition: 1s;
   }
   .titles {
-    margin-left: 1em;
+    margin-left: 5.3em;
   }
   .name-product-1 {
     font-size: 20px;
+    margin-left: 4.1em;
   }
   .name-product-2 {
     font-size: 20px;
+    margin-left: 4em;
   }
   .name-product-3 {
     font-size: 20px;
+    margin-left: 3.8em;
   }
   .information-product {
     font-size: 14px;
     width: 160px;
-    margin-left: 2.5em;
+    margin-left: 4.5em;
   }
   .products svg {
     cursor: pointer;
     transition: 500ms;
-    transform: translateX(6em) translateY(5em);
+    transform: translateX(7.8em) translateY(5em);
   }
   .tarjet-1:hover svg {
     border-radius: 4px;
@@ -448,7 +455,7 @@ main section .products li {
     bottom: 9em;
     margin-left: 0.2em;
     width: 224px;
-    transform: translateX(4px) translateY(1.5em);
+    transform: translateX(1.8em) translateY(1.3em);
     z-index: 1;
   }
   .image-2 {
@@ -456,7 +463,7 @@ main section .products li {
     bottom: 9em;
     width: 224px;
     margin-left: 0.2em;
-    transform: translateX(4px) translateY(54em);
+    transform: translateX(1.8em) translateY(53.5em);
     z-index: 1;
   }
   .image-3 {
@@ -464,7 +471,7 @@ main section .products li {
     bottom: 9em;
     width: 224px;
     margin-left: 0.2em;
-    transform: translateX(4px) translateY(108em);
+    transform: translateX(1.8em) translateY(107em);
     z-index: 1;
   }
   .products {
