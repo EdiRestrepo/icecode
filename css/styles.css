@@ -14,11 +14,12 @@
 /*Todo el contenido*/
 #customer-reviews {
   width: 1200px;
+  height: 350px;
   font-family: "DM Sans";
   margin-top: 120px;
 }
 
-.slides {
+#slides {
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,29 +48,33 @@
   position: relative;
 }
 
-.customer-review-text::before {
+.row-line {
   position: absolute;
-  content: "";
   background-color: #E1E1E1;
+  width: 821px;
+  height: 1px;
+  border-radius: 1px;
   left: 73px;
+}
+
+#row1 {
   top: 76px;
-  width: 821px;
-  height: 1px;
-  border-radius: 1px;
 }
 
-.customer-review-text::after {
-  position: absolute;
-  content: "";
-  background-color: #E1E1E1;
-  left: 73px;
+#row2 {
   top: 107px;
-  width: 821px;
-  height: 1px;
-  border-radius: 1px;
 }
 
-#icon-quotes {
+#row3,
+#row4,
+#row5,
+#row6,
+#row7,
+#row8 {
+  opacity: 0;
+}
+
+.icon-quotes {
   width: 54px;
   height: 40px;
   position: absolute;
@@ -90,7 +95,7 @@
   text-align: center;
 }
 
-#dots-container {
+.dots-container {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -190,85 +195,105 @@
     width: 768px;
     margin-top: 60px;
   }
-  .slides {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
   .review-card {
-    opacity: 0;
-    transition: opacity 300ms;
-    position: absolute;
-    width: 968px;
+    width: 620px;
   }
-  .customer-image-container {
-    display: flex;
-    justify-content: center;
+  .row-line {
+    left: 6px;
+    width: 608px;
   }
-  .customer-picture {
-    position: relative;
-    height: 85px;
-    width: 85px;
+  #row1 {
+    top: 68px;
   }
-  .customer-review-text-container {
-    background-color: #FAFAFA;
-    position: relative;
+  #row2 {
+    top: 98px;
   }
-  .customer-review-text::before {
-    position: absolute;
-    content: "";
-    background-color: #E1E1E1;
-    left: 73px;
-    top: 76px;
-    width: 821px;
-    height: 1px;
-    border-radius: 1px;
+  #row3 {
+    opacity: 1;
+    top: 128px;
   }
-  .customer-review-text::after {
-    position: absolute;
-    content: "";
-    background-color: #E1E1E1;
-    left: 73px;
-    top: 107px;
-    width: 821px;
-    height: 1px;
-    border-radius: 1px;
-  }
-  #icon-quotes {
-    width: 54px;
-    height: 40px;
-    position: absolute;
-    top: 32px;
-    left: 72px;
+  .icon-quotes {
+    top: 20px;
+    left: 14px;
   }
   .customer-review-text {
-    position: relative;
-    width: 968px;
-    height: 138px;
-    font-size: 16px;
-    margin: 16px 0 16px 0;
-    padding: 47px 109px 39px 109px;
-    font-weight: 500;
+    width: 620px;
+    height: 164px;
+    font-size: 14px;
+    margin: 20px 0 4px 0;
+    padding: 37px 53px 44px 53px;
     line-height: 29.76px;
     letter-spacing: 0.04em;
-    text-align: center;
-  }
-  #dots-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-  .dot {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #D41443;
   }
   .customer-name {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 500;
-    line-height: 37.2px;
+    font-size: 16px;
+    line-height: 29.76px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #customer-reviews {
+    width: 320px;
+    height: 514px;
+    margin-top: 60px;
+  }
+  .review-card {
+    width: 280px;
+  }
+  .row-line {
+    left: 50px;
+    width: 180px;
+  }
+  #row1 {
+    top: 74px;
+  }
+  #row2 {
+    top: 105px;
+  }
+  #row3 {
+    opacity: 1;
+    top: 136px;
+  }
+  #row4 {
+    opacity: 1;
+    top: 167px;
+  }
+  #row5 {
+    opacity: 1;
+    top: 198px;
+  }
+  #row6 {
+    opacity: 1;
+    top: 229px;
+  }
+  #row7 {
+    opacity: 1;
+    top: 260px;
+  }
+  #row8 {
+    opacity: 1;
+    top: 291px;
+  }
+  .icon-quotes {
+    top: 30px;
+    left: 49px;
+  }
+  .customer-review-text {
+    width: 280px;
+    height: 308px;
+    font-size: 12px;
+    margin: 32px 0 16px 0;
+    padding: 43px 61.5px 26px 61.5px;
+    line-height: 31px;
+    letter-spacing: 0;
+  }
+  .customer-name {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  #btn1,
+#btn2,
+#btn3 {
+    top: 503px;
+    left: 9px;
   }
 }/*# sourceMappingURL=styles.css.map */
