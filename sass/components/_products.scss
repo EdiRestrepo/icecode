@@ -1,0 +1,84 @@
+@import "../utils/mixin";
+@import "../utils/variables";
+
+.ices{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    &__item:nth-child(1) &-inf{
+        background-color: $strawberry;
+    }
+    &__item:nth-child(2) &-inf{
+        background-color: $coffee;
+    }
+    &__item:nth-child(3) &-inf{
+        background-color: $lime;
+    }
+    &__item{
+        width: 368px;
+        // height: 796px;
+    }
+    &__item:focus,
+    &__item:hover{
+        border-radius: 22px;
+        box-shadow: 5px 5px 10px 10px rgb(99, 99, 99);
+    }
+    &__img{
+        width: inherit;
+    }
+}
+.ices-inf{
+    margin-top: -130px;
+    padding: 130px 0px 60px;
+    width: inherit;
+    text-align: center;
+    border-radius: 24px;
+    &__title{
+        font-family: 'Titan One',cursive;
+        font-size: 30px;
+        line-height: 1.13;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 0.04em;
+    }
+    &__points{
+        color: $white;
+        font-size: 40px;
+        line-height: 1.13;
+        letter-spacing: 4px;
+    }
+    &__des{
+        width: 241px;
+        margin: 15px auto;
+        color: $white;
+        @include style-letter(normal,700,16px,1.76);
+    }
+    &__btn{
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:1199px){
+    .ices__item{
+        width: 224px;
+    }
+    .ices-inf{
+    margin-top: -86px;
+    padding: 90px 0px 60px;
+        &__title{
+            font-size: 20px;
+        }
+        &__des{
+            width: 150px;
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+ .ices__item{
+    width: 280px;
+ }   
+}
