@@ -7,7 +7,6 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 
 
-
 /*Todo el contenido*/
 *{
     padding: 0;
@@ -15,8 +14,6 @@
     box-sizing: border-box; //esto asegura que el relleno y el borde estan incluidos en el ancho total y altura de los elementos
     text-decoration: none;
     list-style: none;
-    background: $dark-pink;
-
   }
   
   /*Todo el contenido*/
@@ -25,6 +22,7 @@
   }
 
   @import 'components/header';
+  @import 'components/customerReviews';
   
 
 
