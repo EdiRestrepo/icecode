@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,209 +9,414 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Icecream</title>
 </head>
+
 <body>
     <header>
-      <div class="img">
-        <img class="img__ice" src="./img/header/ice-cream.png" />
-        <img class="img__milk" src="./img/header/milk.png" />
-        <img class="img__tasty" src="./img/header/tasty.png" />
-        <svg class="img__circle-ice" width="534" height="534" viewBox="0 0 1 1">
-          <circle r="1" cx="50%" cy="50%" />
-        </svg>
-      </div>
-      <nav class="nav-bar">
-        <svg width="199px" height="50px">
-          <use href="./img/header/icons.svg#icon-logo"></use>
-        </svg>
-        <ul class="list menu">
-          <li class="effect"><a class="menu__link site" href="#">Home</a></li>
-          <li class="effect"><a class="menu__link" href="#">About us</a></li>
-          <li class="effect">
-            <a class="menu__link" href="#">How it's made?</a>
-          </li>
-          <li class="effect">
-            <a class="menu__link" href="#">Our products</a>
-          </li>
-          <li class="effect"><a class="menu__link" href="#">Contact</a></li>
-        </ul>
-        <div class="media-div">
-          <button class="media__modal" mobile-menu-open>
-            <svg width="20px" height="12px">
-              <use href="./img/header/icons.svg#icon-menu"></use>
+        <div class="img">
+            <img class="img__ice" src="./images/header/ice-cream.png" />
+            <img class="img__milk" src="./images/header/milk.png" />
+            <img class="img__tasty" src="./images/header/tasty.png" />
+            <svg class="img__circle-ice" width="534" height="534" viewBox="0 0 1 1">
+                <circle r="1" cx="50%" cy="50%" />
             </svg>
-          </button>
-          <button class="effect btn nav__btn" type="button">
-            Buy now
-            <svg class="nav__svg" width="6px" height="12px">
-              <use href="./img/header/icons.svg#icon-triangle"></use>
-            </svg>
-          </button>
         </div>
-      </nav>
-      <div class="banner-header">
-        <div class="banner__section">
-          <h1 class="title">
-            ice cream made with <span class="title__span">passion</span>
-          </h1>
-          <button class="effect btn banner__btn" type="button">Products</button>
-          <button class="effect btn banner__btn" type="button">
-            How it's made?
-          </button>
+        <nav class="nav-bar">
+            <svg class="nav__logo" width="199px" height="50px">
+                <use href="./images/header/icons.svg#icon-logo"></use>
+            </svg>
+            <ul class="list menu">
+                <li class="effect"><a class="menu__link site" href="#">Home</a></li>
+                <li class="effect"><a class="menu__link" href="#about">About us</a></li>
+                <li class="effect">
+                    <a class="menu__link" href="#about">How it's made?</a>
+                </li>
+                <li class="effect">
+                    <a class="menu__link" href="#product">Our products</a>
+                </li>
+                <li class="effect"><a class="menu__link" href="#contacts">Contact</a></li>
+            </ul>
+            <div class="media-div">
+                <button class="media__modal" mobile-menu-open>
+                    <svg width="20px" height="12px">
+                        <use href="./images/header/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <button class="effect btn nav__btn" type="button">
+                    Buy now
+                    <svg class="nav__svg" width="6px" height="12px">
+                        <use href="./images/header/icons.svg#icon-triangle"></use>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="banner-header">
+            <div class="banner__section">
+                <h1 class="title">
+                    ice cream made with <span class="title__span">passion</span>
+                </h1>
+                <button class="effect btn banner__btn" type="button">Products</button>
+                <button class="effect btn banner__btn" type="button">
+                    How it's made?
+                </button>
+            </div>
+            <a class="banner__location" href="#contacts">
+                <div class="local">
+                    <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
+                        <circle r="1" cx="50%" cy="50%" />
+                    </svg>
+                    <span class="local__number">16</span>
+                    <span class="local__label">cafes</span>
+                </div>
+                <div class="local">
+                    <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
+                        <circle r="1" cx="50%" cy="50%" />
+                    </svg>
+                    <span class="local__number">32</span>
+                    <span class="local__label">food trucks</span>
+                </div>
+            </a>
         </div>
-        <a class="banner__location" href="">
-          <div class="local">
-            <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
-              <circle r="1" cx="50%" cy="50%" />
-            </svg>
-            <span class="local__number">16</span>
-            <span class="local__label">cafes</span>
-          </div>
-          <div class="local">
-            <svg class="local__svg" width="30" height="30" viewBox="0 0 1 1">
-              <circle r="1" cx="50%" cy="50%" />
-            </svg>
-            <span class="local__number">32</span>
-            <span class="local__label">food trucks</span>
-          </div>
-        </a>
-      </div>
-      <div class="mix">
-        <p class="mix__inf">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <button class="btn mix-btn">
-          <svg class="mix-btn__svg" width="8" height="16">
-            <use href="./img/header/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="burbujas">
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-      </div>
+        <div class="mix">
+            <p class="mix__inf">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="btn mix-btn">
+                <svg class="mix-btn__svg" width="8" height="16">
+                    <use href="./images/header/icons.svg#icon-arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
     </header>
 
     <main>
-            <!-- seccion about / how its made  -->
-            <section class="about">
-                <h3 class="about__title">Tradition and love</h3>
-                <h2 class="about__subtitle">How it's made?</h2>
-                <ul class="about__list">
-                    <li class="about__list--imagen">
-                        <div class="container">
-                            <img
-                                class="about__image"
-                                src="./images/about/cow.png"
-                                alt="vaca"
-                            />
-                        </div>
-                    </li>
-                    <li>
-                        <div class="about__texto">
-                            <p class="about__texto--principal">
-                                Fusce ut velit laoreet, tempus arcu eu, molestie
-                                tortor. Nam vel justo cursus, faucibus lorem
-                                eget, egestas eros. Maecenas eleifend erat at
-                                justo fringilla.
-                            </p>
-                            <p class="about__texto--secundario">
-                                Curabitur lacinia enim at ex blandit, vel
-                                pellentesque odio elementum. Mauris rhoncus orci
-                                in imperdiet placerat. Vestibulum euismod nisl
-                                suscipit ligula volutpat, a feugiat urna
-                                maximus. Cras massa nibh, tincidunt. Aliquam
-                                erat volutpat. Aenean accumsan.
-                            </p>
+        <!-- seccion about / how its made  -->
+        <section class="about" id="about">
+            <h3 class="about__title">Tradition and love</h3>
+            <h2 class="about__subtitle">How it's made?</h2>
+            <ul class="about__list">
+                <li class="about__list--imagen">
+                    <div class="container">
+                        <img class="about__image" src="./images/about/cow.png" alt="vaca" />
+                    </div>
+                </li>
+                <li>
+                    <div class="about__texto">
+                        <p class="about__texto--principal">
+                            Fusce ut velit laoreet, tempus arcu eu, molestie
+                            tortor. Nam vel justo cursus, faucibus lorem
+                            eget, egestas eros. Maecenas eleifend erat at
+                            justo fringilla.
+                        </p>
+                        <p class="about__texto--secundario">
+                            Curabitur lacinia enim at ex blandit, vel
+                            pellentesque odio elementum. Mauris rhoncus orci
+                            in imperdiet placerat. Vestibulum euismod nisl
+                            suscipit ligula volutpat, a feugiat urna
+                            maximus. Cras massa nibh, tincidunt. Aliquam
+                            erat volutpat. Aenean accumsan.
+                        </p>
 
-                            <button class="about__readmore">Read more ></button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+                        <button class="about__readmore">Read more ></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-                    <!-- Section Advantages -->
+        <!-- Section Advantages -->
         <section class="advantages">
-          <ul class="advantages-list">
-              <li class="advantages-list__item">
-                  <svg class="advantages-list__svg" width="33" height="50">
-                      <use href="images/SVG/sprite.svg#glass"></use>
+            <ul class="advantages-list">
+                <li class="advantages-list__item">
+                    <svg class="advantages-list__svg" width="33" height="50">
+                        <use href="images/SVG/sprite.svg#glass"></use>
                     </svg>
-                  <p class="advantages-list__number">721</p>
-                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-              </li>
-              <li class="advantages-list__item">
-                  <svg class="advantages-list__svg" width="50" height="50">
-                      <use href="images/SVG/sprite.svg#apples"></use>
+                    <p class="advantages-list__number">721</p>
+                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                </li>
+                <li class="advantages-list__item">
+                    <svg class="advantages-list__svg" width="50" height="50">
+                        <use href="images/SVG/sprite.svg#apples"></use>
                     </svg>
-                  <p class="advantages-list__number">16kg</p>
-                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-              </li>
-              <li class="advantages-list__item">
-                  <svg class="advantages-list__svg" width="50" height="50">
-                      <use href="images/SVG/sprite.svg#frozen-heart"></use>
+                    <p class="advantages-list__number">16kg</p>
+                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                </li>
+                <li class="advantages-list__item">
+                    <svg class="advantages-list__svg" width="50" height="50">
+                        <use href="images/SVG/sprite.svg#frozen-heart"></use>
                     </svg>
-                  <p class="advantages-list__number">84</p>
-                  <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-              </li>
-          </ul>
-      </section>
+                    <p class="advantages-list__number">84</p>
+                    <p class="advantages-list__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                </li>
+            </ul>
+        </section>
 
-      <section class="gallery">
-        <div class="gallery__img-1">
-            <img class="gallery__img" src="images/gallery/image1.jpg" alt="crema de coco">
-        </div>
-        <section>
-            <div class="gallery__img-2">
-                <img class="gallery__img" src="images/gallery/image2.jpg" alt="helado de fresa">
+        <section class="gallery">
+            <div class="gallery__img-1">
+                <img class="gallery__img" src="images/gallery/image1.jpg" alt="crema de coco">
             </div>
-            <div class="gallery__img-3"> 
-                <img class="gallery__img" src="images/gallery/image3.jpg" alt="paleta de fresa">
+            <section>
+                <div class="gallery__img-2">
+                    <img class="gallery__img" src="images/gallery/image2.jpg" alt="helado de fresa">
+                </div>
+                <div class="gallery__img-3">
+                    <img class="gallery__img" src="images/gallery/image3.jpg" alt="paleta de fresa">
+                </div>
+            </section>
+            <section>
+                <div class="gallery__img-4">
+                    <img class="gallery__img" src="images/gallery/image4.jpg" alt="helados">
+                </div>
+                <div class="gallery__img-5">
+                    <img class="gallery__img" src="images/gallery/image5.jpg" alt="mujer">
+                </div>
+            </section>
+            <section>
+                <div class="gallery__img-6">
+                    <img class="gallery__img" src="images/gallery/image6.jpg" alt="ensalada de frutas">
+                </div>
+                <div class="gallery__img-7">
+                    <img class="gallery__img" src="images/gallery/image7.jpg" alt="helado de naranja">
+                </div>
+            </section>
+            <section>
+                <div class="gallery__img-8">
+                    <img class="gallery__img" src="images/gallery/image8.jpg" alt="perro">
+                </div>
+                <div class="gallery__img-9">
+                    <img class="gallery__img" src="images/gallery/image9.jpg" alt="cofee">
+                </div>
+            </section>
+            <div class="gallery__img-10">
+                <img class="gallery__img" src="images/gallery/image10.jpg" alt="helado de chispas">
             </div>
         </section>
-        <section>
-            <div class="gallery__img-4">
-                <img class="gallery__img" src="images/gallery/image4.jpg" alt="helados">
-            </div>
-            <div class="gallery__img-5">
-                <img class="gallery__img" src="images/gallery/image5.jpg" alt="mujer">
-            </div>
-        </section>
-        <section>
-            <div class="gallery__img-6">
-                <img class="gallery__img" src="images/gallery/image6.jpg" alt="ensalada de frutas">
-            </div>
-            <div class="gallery__img-7">
-                <img class="gallery__img" src="images/gallery/image7.jpg" alt="helado de naranja">
-            </div>
-        </section>
-        <section>
-            <div class="gallery__img-8">
-                <img class="gallery__img" src="images/gallery/image8.jpg" alt="perro">
-            </div>
-            <div class="gallery__img-9">
-                <img class="gallery__img" src="images/gallery/image9.jpg" alt="cofee">
-            </div>
-        </section>
-        <div class="gallery__img-10">
-            <img class="gallery__img" src="images/gallery/image10.jpg" alt="helado de chispas">
-        </div>
-    </section>
 
-        </main>
+        <section class="contacts" id="contacts">
+            <div class="contacts__container">
+                <ul class="contacts__list">
+                    <li class="contacts__card">
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--title">CAFE</p>
+                            <p class="cards__data cards__data--subtitle">Chicago</p>
+                            <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie
+                                vulputate</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                            <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                            <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                            <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284
+                            </p>
+                            <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                        </div>
+                    </li>
+                    <li class="contacts__card">
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--title cards__data--title--Store">FOOD TRUCK</p>
+                            <p class="cards__data cards__data--subtitle">Los Angeles</p>
+                            <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie
+                                vulputate</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                            <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                            <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                            <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284
+                            </p>
+                            <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                        </div>
+                    </li>
+                    <li class="contacts__card">
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--title">CAFE</p>
+                            <p class="cards__data cards__data--subtitle">New Yrok</p>
+                            <p class="cards__data cards__data--text">Fusce ut velit laoreet, tempus arcu molestie
+                                vulputate</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--subtitle">Monday - Friday</p>
+                            <p class="cards__data cards__data--time">06:00 AM - 10:00 PM</p>
+                            <p class="cards__data cards__data--subtitle">Saturday - Sunday</p>
+                            <p class="cards__data cards__data--time">08:00 AM - 16:00 PM</p>
+                        </div>
+                        <div class="cards__data">
+                            <p class="cards__data cards__data--contact cards__data--contact--phone">+61(0) 383 766 284
+                            </p>
+                            <p class="cards__data cards__data--contact">noreply@envato.com</p>
+                        </div>
+                    </li>
+            </div>
 
-    
+            <div class="contacts__button">
+                <button type="button" class="button button--location" data-modal-open-maps>Our Locations</button>
+                <svg class="icon" width="4.13" height="8">
+                    <use xlink:href="./images-contacts/icons.svg#icon-button"></use>
+                </svg>
+
+
+                <button type="button" class="button button--franchise" data-modal-open-contact>Franchise</button>
+
+
+
+            </div>
+            <!--- maps modal--->
+            <div class="backdrop is-hidden" data-modal-maps>
+                <div class="contacts__modal">
+                    <button class="contacts__close" data-modal-close-maps>X</button>
+                    <div class="contacts__window">
+                        <h3 class="contacts__location contacts__window--title">We will be glad to see you</h3>
+                        <iframe class="contacts__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.3928070812!2d-74.24789584881646!3d4.648625942144899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1673148525191!5m2!1ses!2sco"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h4 class="contacts__location contacts__window--subtitle">yevhen konovalets street, 36 kyiv,
+                            02000</h4>
+                        <button type="button" class="button button--maps">Open in Gooogle maps</button>
+                    </div>
+                </div>
+            </div>
+            <!--- form modal--->
+
+            <div class="backdrop is-hidden" data-modal-contact>
+                <div class="contacts__modal contacts__modal--franchise">
+                    <button class="contacts__close" data-modal-close-contact>X</button>
+
+                    <div class="contacts__window">
+                        <h3 class="contacts__window contacts__window--title">Leave your details and maybe we will call
+                            you back</details>
+                        </h3>
+                        <form class="contacts__form" name="form" autocomplete="on">
+
+                            <label class="contacts__lable" for="input-name">Name</label>
+                            <input class="contacts-input" type="text" name="name" id="input-name" required />
+                            <label class="contacts__lable" for="input-phone">Phone number</label>
+                            <input class="contacts-input" type="tel" name="phone_number" id="input-phone" / required>
+                            <label class="contacts__lable" for="input-email">Email</label>
+                            <input class="contacts-input" type="email" name="email" id="input-email" / required>
+                            <label class="contacts__lable">a few words, my darling</label>
+                            <textarea class="textarea" name="feedback" rows="7" placeholder="Write here."></textarea>
+
+
+
+                            <button class="button button--submit" type="submit">Send</button>
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
 
     <footer>
-
+      <div class="footer">
+        <div class="footer__columns">
+          <div class="footer__titles">
+            <ul class="footer__big">
+              <li class="big-text">HOMEMADE ICE CREAM </li>
+              <li class="big-text-increase">MADE </li> 
+            </ul>
+            <h4 class="footer__bigger-text">
+             <ul class="bigger-text">
+              <li class="bigger-text-increase">W</li>
+              <li class="bigger-text-increase">I</li>
+              <li class="bigger-text-increase">T</li>
+              <li class="bigger-text-increase">H</li>
+             </ul>
+             <ul class="bigger-text">
+              <li class="bigger-text-increase">P</li>
+              <li class="bigger-text-increase">A</li>
+              <li class="bigger-text-increase">S</li>
+              <li class="bigger-text-increase">S</li>
+              <li class="bigger-text-increase">I</li>
+              <li class="bigger-text-increase">O</li>
+              <li class="bigger-text-increase">N</li> 
+             </ul>            
+          </div>
+          <div class="footer__icons">
+            <ul class="footer__item">
+              <li class="footer__social">
+                <a class="footer__github" href="...">
+                 <svg class="footer__icon1" width="20" height="20">
+                   <use href="images/SVG/icons.svg#github"></use>
+                 </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a class="footer__telegram" href="...">
+                  <svg class="footer__icon2" width="20" height="20">
+                    <use href="images/SVG/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a class="footer__facebook" href="...">
+                  <svg class="footer__icon3" width="20" height="20">
+                    <use href="images/SVG/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__contact">
+              <p class="footer__contact-text"> Feel free to contact </p>
+              <p class="footer__contact-tel efecto" href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__abyss">
+           <p class="footer__abyss--text">© 2019 - IceCream. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
+    <section class="mobile-menu is-hidden" mobile-menu>
+      <button class="mobile__btn" type="button" mobile-menu-close>
+        <svg class="mobile__svg" width="12px" height="12px"><use href="./images/header/icons.svg#icon-close"></use></svg>
+      </button>
+      <button class="effect btn nav__btn btn--mobile" type="button">
+        Buy now
+        <svg class="nav__svg" width="6px" height="12px">
+          <use href="./images/header/icons.svg#icon-triangle"></use>
+        </svg>
+      </button>
+      <ul class="list menu--mobile">
+        <li class=" menu__item effect"><a class="menu__link site" href="#">Home</a></li>
+        <li class=" menu__item effect"><a class="menu__link" href="#about">About us</a></li>
+        <li class=" menu__item effect">
+          <a class="menu__link" href="#about">How it's made?</a>
+        </li>
+        <li class=" menu__item effect">
+          <a class="menu__link" href="#product">Our products</a>
+        </li>
+        <li class="menu__item effect"><a class="menu__link" href="#contacts">Contact</a></li>
+        <li class="menu__item"></li>
+      </ul>
+    </section>
+    <script src="./js/modalmaps.js"></script>
+    <script src="./js/modalcontact.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
+
 </html>
