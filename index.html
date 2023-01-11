@@ -21,7 +21,7 @@
             </svg>
         </div>
         <nav class="nav-bar">
-            <svg width="199px" height="50px">
+            <svg class="nav__logo" width="199px" height="50px">
                 <use href="./img/header/icons.svg#icon-logo"></use>
             </svg>
             <ul class="list menu">
@@ -391,6 +391,29 @@
         </div>
       </div>
     </footer>
+    <section class="mobile-menu is-hidden" mobile-menu>
+      <button class="mobile__btn" type="button" mobile-menu-close>
+        <svg class="mobile__svg" width="12px" height="12px"><use href="./img/header/icons.svg#icon-close"></use></svg>
+      </button>
+      <button class="effect btn nav__btn btn--mobile" type="button">
+        Buy now
+        <svg class="nav__svg" width="6px" height="12px">
+          <use href="./img/header/icons.svg#icon-triangle"></use>
+        </svg>
+      </button>
+      <ul class="list menu--mobile">
+        <li class=" menu__item effect"><a class="menu__link site" href="#">Home</a></li>
+        <li class=" menu__item effect"><a class="menu__link" href="#">About us</a></li>
+        <li class=" menu__item effect">
+          <a class="menu__link" href="#">How it's made?</a>
+        </li>
+        <li class=" menu__item effect">
+          <a class="menu__link" href="#">Our products</a>
+        </li>
+        <li class="menu__item effect"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"></li>
+      </ul>
+    </section>
     <script src="./js/modalmaps.js"></script>
     <script src="./js/modalcontact.js"></script>
     <script src="./js/mobile-menu.js"></script>
