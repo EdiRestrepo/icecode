@@ -82,8 +82,8 @@ header {
     color: $dark-pink;
   }
 
-  &__link:focus,
-  &__link:hover {
+  &__btn:focus &__link,
+  &__btn:hover &__link{
     color: $white;
   }
 }
