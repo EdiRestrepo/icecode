@@ -157,7 +157,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(5em) translateX(10em);
+    transform: translateY(5em) translateX(11em);
     transition: 500ms;
   }
 
@@ -168,7 +168,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(5em) translateX(10em);
+    transform: translateY(5em) translateX(11em);
     transition: 500ms;
   }
 
@@ -179,44 +179,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(5em) translateX(10em);
+    transform: translateY(5em) translateX(11em);
     transition: 500ms;
   }
 
   .tarjet-1:hover .tarjet-1__btn {
-    color: $white;
+    fill: $white;
     background-color: $dark-pink;
-    transition: 500ms;
+    transition: 250ms;
   }
 
-  .tarjet-1:hover .mix__svg {
+  .tarjet-1:hover .mix-btn__svg {
     fill: $white;
     transform: rotate(-90deg) translateX(0) translateY(0px);
-    transition: 500ms;
+    transition: 250ms;
   }
 
   .tarjet-2:hover .tarjet-2__btn {
-    color: $white;
+    fill: $white;
     background-color: $dark-pink;
-    transition: 500ms;
+    transition: 250ms;
   }
 
-  .tarjet-2:hover .mix__svg {
+  .tarjet-2:hover .mix-btn__svg {
     fill: $white;
     transform: rotate(-90deg) translateX(0) translateY(0px);
-    transition: 500ms;
+    transition: 250ms;
   }
 
   .tarjet-3:hover .tarjet-3__btn {
-    color: $white;
+    fill: $white;
     background-color: $dark-pink;
-    transition: 500ms;
+    transition: 250ms;
   }
 
-  .tarjet-3:hover .mix__svg {
+  .tarjet-3:hover .mix-btn__svg {
     fill: $white;
     transform: rotate(-90deg) translateX(0) translateY(0px);
-    transition: 500ms;
+    transition: 250ms;
   }
 
   .tarjet-1__btn {
