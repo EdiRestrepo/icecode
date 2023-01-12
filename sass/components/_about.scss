@@ -1,25 +1,27 @@
 @import '../utils/variables';
 
-.about{
+.about {
     background-color: $background-pink;
+
     &__title {
-            color: $dark-pink;
-            // text-align: center;
-            text-transform: uppercase;
-            font-size: 30px;
-            line-height: 34px;
-            letter-spacing: 0.04em;
-            text-align: center;
-            padding-top: 60px;
-        }
+        color: $light-pink;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding-top: 60px;
+        font-family: Titan One;
+        font-weight: 400;
+    }
 
     &__title:hover {
         animation: rotacion 4s;
         animation-direction: alternate;
     }
 
-    &__subtitle{
-        color: $light-pink;
+    &__subtitle {
+        color: $dark-pink;
         text-align: center;
         text-transform: uppercase;
         font-size: 58px;
@@ -27,6 +29,8 @@
         letter-spacing: 0.06em;
         text-align: center;
         margin-top: 16px;
+        font-family: Titan One;
+        font-weight: 400;
     }
 
     &__subtitle:hover {
@@ -35,11 +39,19 @@
     }
 
     &__texto {
-        padding: 10% 15% 10% 15%;
-        &--principal{
+        padding-right: 100px;
+        margin-left: 99px;
+
+        &--principal {
             color: $black;
             margin-bottom: 32px;
             width: 463px;
+            font-family: DM Sans;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0.04em;
+            text-align: left;
         }
 
         &--principal:hover {
@@ -51,6 +63,12 @@
             color: $gray;
             margin-bottom: 32px;
             width: 463px;
+            font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0.04em;
+            text-align: left;
         }
 
         &--secundario:hover {
@@ -61,10 +79,13 @@
 
     &__list {
         display: flex;
-        background-image: url('/images/about/background.png');
+        background-image: url('../images/about/background.png');
         background-size: cover;
         background-repeat: no-repeat;
-        &___list--imagen{
+        justify-content: center;
+        align-items: center;
+
+        &___list--imagen {
             padding: 0% 5% 0% 5%;
         }
     }
@@ -88,6 +109,12 @@
         border-radius: 22px;
         color: $dark-pink;
         border: 1px solid $strawberry;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
     }
 
     &__readmore:hover {
@@ -106,45 +133,54 @@
 
 @media only screen and (min-width: 768px) and (max-width:1199px) {
 
-    .about__title{
+    .about__title {
         font-size: 26px;
         // font-weight: 400;
         line-height: 30px;
         letter-spacing: 0em;
     }
 
-    .about__subtitle{
+    .about__subtitle {
         font-size: 48px;
         // font-weight: 400;
         line-height: 55px;
         letter-spacing: 0.04em;
     }
 
-    .about__texto{
+    .about__texto {
+        margin-left: 32px;
+        padding: 40px 0 0 0;
+
         &--principal {
-                color: $black;
-                margin-bottom: 40px;
-                width: 334px;
-            }
+            color: $black;
+            margin-bottom: 40px;
+            width: 334px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
 
         &--secundario {
             color: $gray;
             margin-bottom: 40px;
             width: 334px;
+            font-size: 14px;
+            line-height: 25px;
         }
     }
 
-    .about__list{
+    .about__list {
         background-image: none;
     }
 
-    .about__list--imagen{
+    .about__list--imagen {
         padding: 0% 1% 0% 1%;
     }
 
-    .about__image{
+    .about__image {
         width: 336px;
     }
+
 
 }
 
@@ -152,40 +188,55 @@
 
     .about__title {
         font-size: 18px;
-        // font-weight: 400;
         line-height: 21px;
         letter-spacing: 0em;
     }
 
     .about__subtitle {
         font-size: 34px;
-        // font-weight: 400;
         line-height: 39px;
         letter-spacing: 0.04em;
         margin-bottom: 32px;
     }
 
-    .about__list{
+    .about__list {
         flex-direction: column;
         background-image: none;
     }
 
     .about__texto {
+        margin-left: 0;
+        padding-right: 50px;
+
         &--principal {
             color: $black;
             margin-bottom: 40px;
             width: 220px;
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: 0em;
         }
 
         &--secundario {
+            background-image: url('images/about/background.png');
+            background-size: contain;
+            background-repeat: no-repeat;
             color: $gray;
             margin-bottom: 20px;
             width: 220px;
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: 0em;
         }
     }
 
     .about__image {
         width: 280px;
+    }
+
+    .about_readmore {
+        font-size: 14px;
+        line-height: 18px;
     }
 
 }
