@@ -365,26 +365,73 @@
       margin-left: 2.5em;
     }
 
-    .products svg {
-      cursor: pointer;
-      transition: 500ms;
-      transform: translateX(6em) translateY(5em);
+    .tarjet-1:hover .tarjet-1__btn {
+      fill: $white;
+      background-color: $dark-pink;
+      transition: 250ms;
+    }
+  
+    .tarjet-1:hover .mix-btn__svg {
+      fill: $white;
+      transform: rotate(-90deg) translateX(0) translateY(0px);
+      transition: 250ms;
+    }
+  
+    .tarjet-2:hover .tarjet-2__btn {
+      fill: $white;
+      background-color: $dark-pink;
+      transition: 250ms;
+    }
+  
+    .tarjet-2:hover .mix-btn__svg {
+      fill: $white;
+      transform: rotate(-90deg) translateX(0) translateY(0px);
+      transition: 250ms;
+    }
+  
+    .tarjet-3:hover .tarjet-3__btn {
+      fill: $white;
+      background-color: $dark-pink;
+      transition: 250ms;
+    }
+  
+    .tarjet-3:hover .mix-btn__svg {
+      fill: $white;
+      transform: rotate(-90deg) translateX(0) translateY(0px);
+      transition: 250ms;
     }
 
-    .tarjet-1:hover svg {
-      border-radius: 4px;
+    .tarjet-1__mix-btn {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(5em) translateX(6.5em);
       transition: 500ms;
-      transform: rotate(-90deg) translateX(-5em) translateY(6em);
     }
   
-    .tarjet-2:hover svg {
+    .tarjet-2__mix-btn {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(5em) translateX(6.5em);
       transition: 500ms;
-      transform: rotate(-90deg) translateX(-5em) translateY(6em);
     }
   
-    .tarjet-3:hover svg {
+    .tarjet-3__mix-btn {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(5em) translateX(6.5em);
       transition: 500ms;
-      transform: rotate(-90deg) translateX(-5em) translateY(6em);
     }
 
     .products__image-1 {
@@ -456,6 +503,99 @@
         transition: 1s;
       }
 
+      .products .mix__svg {
+        fill: $dark-pink;
+        transform: translateX(0) translateY(1px);
+        transition: 500ms;
+      }
+    
+      .tarjet-1__mix-btn {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(5em) translateX(8em);
+        transition: 500ms;
+      }
+    
+      .tarjet-2__mix-btn {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(5em) translateX(8em);
+        transition: 500ms;
+      }
+    
+      .tarjet-3__mix-btn {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(5em) translateX(8em);
+        transition: 500ms;
+      }
+    
+      .tarjet-1:hover .tarjet-1__btn {
+        color: $white;
+        background-color: $dark-pink;
+        transition: 500ms;
+      }
+    
+      .tarjet-1:hover .mix__svg {
+        fill: $white;
+        transform: rotate(-90deg) translateX(0) translateY(0px);
+        transition: 500ms;
+      }
+    
+      .tarjet-2:hover .tarjet-2__btn {
+        color: $white;
+        background-color: $dark-pink;
+        transition: 500ms;
+      }
+    
+      .tarjet-2:hover .mix__svg {
+        fill: $white;
+        transform: rotate(-90deg) translateX(0) translateY(0px);
+        transition: 500ms;
+      }
+    
+      .tarjet-3:hover .tarjet-3__btn {
+        color: $white;
+        background-color: $dark-pink;
+        transition: 500ms;
+      }
+    
+      .tarjet-3:hover .mix__svg {
+        fill: $white;
+        transform: rotate(-90deg) translateX(0) translateY(0px);
+        transition: 500ms;
+      }
+    
+      .tarjet-1__btn {
+        background-color: $white;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .tarjet-2__btn {
+        background-color: $white;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .tarjet-3__btn {
+        background-color: $white;
+        border: none;
+        cursor: pointer;
+      }
+
       .set-products__titles {
         margin-left: 5.3em;
       }
@@ -482,28 +622,6 @@
         font-size: 14px;
         width: 160px;
         margin-left: 4.5em;
-      }
-  
-      .products svg {
-        cursor: pointer;
-        transition: 500ms;
-        transform: translateX(7.8em) translateY(5em);
-      }
-  
-      .tarjet-1:hover svg {
-        border-radius: 4px;
-        transition: 500ms;
-        transform: rotate(-90deg) translateX(-5em) translateY(6em);
-      }
-    
-      .tarjet-2:hover svg {
-        transition: 500ms;
-        transform: rotate(-90deg) translateX(-5em) translateY(6em);
-      }
-    
-      .tarjet-3:hover svg {
-        transition: 500ms;
-        transform: rotate(-90deg) translateX(-5em) translateY(6em);
       }
   
       .products__image-1 {

@@ -633,7 +633,7 @@ header {
   box-shadow: 5px 4px 5px #b8e480, 4px 3px 4px #cbf891, 3px 2px 3px #c7ec96, 2px 1px 2px #aecc88;
 }
 
-.products .mix-btn__svg {
+.products .mix__svg {
   fill: #D41443;
   transform: translateX(0px) translateY(1px);
   transition: 500ms;
@@ -678,7 +678,7 @@ header {
   transition: 500ms;
 }
 
-.tarjet-1:hover .mix-btn__svg {
+.tarjet-1:hover .mix__svg {
   fill: #ffffff;
   transform: rotate(-90deg) translateX(0) translateY(0px);
   transition: 500ms;
@@ -690,7 +690,7 @@ header {
   transition: 500ms;
 }
 
-.tarjet-2:hover .mix-btn__svg {
+.tarjet-2:hover .mix__svg {
   fill: #ffffff;
   transform: rotate(-90deg) translateX(0) translateY(0px);
   transition: 500ms;
@@ -702,7 +702,7 @@ header {
   transition: 500ms;
 }
 
-.tarjet-3:hover .mix-btn__svg {
+.tarjet-3:hover .mix__svg {
   fill: #ffffff;
   transform: rotate(-90deg) translateX(0) translateY(0px);
   transition: 500ms;
@@ -846,23 +846,65 @@ header {
     width: 160px;
     margin-left: 2.5em;
   }
-  .products svg {
-    cursor: pointer;
-    transition: 500ms;
-    transform: translateX(6em) translateY(5em);
+  .tarjet-1:hover .tarjet-1__btn {
+    fill: #ffffff;
+    background-color: #D41443;
+    transition: 250ms;
   }
-  .tarjet-1:hover svg {
-    border-radius: 4px;
-    transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
+  .tarjet-1:hover .mix-btn__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 250ms;
   }
-  .tarjet-2:hover svg {
-    transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
+  .tarjet-2:hover .tarjet-2__btn {
+    fill: #ffffff;
+    background-color: #D41443;
+    transition: 250ms;
   }
-  .tarjet-3:hover svg {
+  .tarjet-2:hover .mix-btn__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 250ms;
+  }
+  .tarjet-3:hover .tarjet-3__btn {
+    fill: #ffffff;
+    background-color: #D41443;
+    transition: 250ms;
+  }
+  .tarjet-3:hover .mix-btn__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 250ms;
+  }
+  .tarjet-1__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(6.5em);
     transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
+  }
+  .tarjet-2__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(6.5em);
+    transition: 500ms;
+  }
+  .tarjet-3__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(6.5em);
+    transition: 500ms;
   }
   .products__image-1 {
     position: absolute;
@@ -926,6 +968,86 @@ header {
     flex-direction: column;
     transition: 1s;
   }
+  .products .mix__svg {
+    fill: #D41443;
+    transform: translateX(0) translateY(1px);
+    transition: 500ms;
+  }
+  .tarjet-1__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(8em);
+    transition: 500ms;
+  }
+  .tarjet-2__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(8em);
+    transition: 500ms;
+  }
+  .tarjet-3__mix-btn {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5em) translateX(8em);
+    transition: 500ms;
+  }
+  .tarjet-1:hover .tarjet-1__btn {
+    color: #ffffff;
+    background-color: #D41443;
+    transition: 500ms;
+  }
+  .tarjet-1:hover .mix__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 500ms;
+  }
+  .tarjet-2:hover .tarjet-2__btn {
+    color: #ffffff;
+    background-color: #D41443;
+    transition: 500ms;
+  }
+  .tarjet-2:hover .mix__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 500ms;
+  }
+  .tarjet-3:hover .tarjet-3__btn {
+    color: #ffffff;
+    background-color: #D41443;
+    transition: 500ms;
+  }
+  .tarjet-3:hover .mix__svg {
+    fill: #ffffff;
+    transform: rotate(-90deg) translateX(0) translateY(0px);
+    transition: 500ms;
+  }
+  .tarjet-1__btn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  .tarjet-2__btn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  .tarjet-3__btn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
   .set-products__titles {
     margin-left: 5.3em;
   }
@@ -948,24 +1070,6 @@ header {
     font-size: 14px;
     width: 160px;
     margin-left: 4.5em;
-  }
-  .products svg {
-    cursor: pointer;
-    transition: 500ms;
-    transform: translateX(7.8em) translateY(5em);
-  }
-  .tarjet-1:hover svg {
-    border-radius: 4px;
-    transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
-  }
-  .tarjet-2:hover svg {
-    transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
-  }
-  .tarjet-3:hover svg {
-    transition: 500ms;
-    transform: rotate(-90deg) translateX(-5em) translateY(6em);
   }
   .products__image-1 {
     position: absolute;
