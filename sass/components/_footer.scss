@@ -82,7 +82,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon1{
-  fill: white;
+  fill: $white;
 }
 .footer__telegram{
   width: 34px;
@@ -99,7 +99,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon2 {
-  fill: white; 
+  fill: $white; 
 }
 .footer__facebook {
   width: 34px;
@@ -116,7 +116,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon3 {
-  fill: white; 
+  fill: $white; 
 }
 .footer__contact {
   display: flex;
@@ -152,7 +152,7 @@ footer {
 }
 .footer__abyss {
   margin-top: 65px;
-  border-top: #e1e1e1 solid 1px;
+  border-top: $border-gray solid 1px;
 }
 .footer__abyss--text {
   margin: 22px auto 25px auto;
@@ -253,7 +253,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon1{
-  fill: white;
+  fill: $white;
 }
 .footer__telegram{
   width: 34px;
@@ -270,7 +270,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon2 {
-  fill: white; 
+  fill: $white; 
 }
 .footer__facebook {
   width: 34px;
@@ -287,7 +287,7 @@ footer {
   background: $dark-pink;
 }
 .footer__icon3 {
-  fill: white; 
+  fill: $white; 
 }
 .footer__contact {
   display: flex;
@@ -323,7 +323,7 @@ footer {
 }
 .footer__abyss {
   margin-top: 65px;
-  border-top: #e1e1e1 solid 1px;
+  border-top: $border-gray solid 1px;
 }
 .footer__abyss--text {
   margin: 22px auto 25px auto;
@@ -423,7 +423,7 @@ footer {
     background: $dark-pink;
   }
   .footer__icon1{
-    fill: white;
+    fill: $white;
   }
   .footer__telegram{
     width: 34px;
@@ -440,7 +440,7 @@ footer {
     background: $dark-pink;
   }
   .footer__icon2 {
-    fill: white; 
+    fill: $white; 
   }
   .footer__facebook {
     width: 34px;
@@ -457,7 +457,7 @@ footer {
     background: $dark-pink;
   }
   .footer__icon3 {
-    fill: white; 
+    fill: $white; 
   }
   .footer__contact {
     display: flex;
@@ -493,7 +493,7 @@ footer {
   }
   .footer__abyss {
     margin-top: 65px;
-    border-top: #e1e1e1 solid 1px;
+    border-top: $border-gray solid 1px;
   }
   .footer__abyss--text {
     margin: 22px 70px 25px 70px;

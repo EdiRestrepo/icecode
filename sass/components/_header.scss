@@ -77,6 +77,16 @@ header {
     border-radius: 20px;
     color: $dark-pink;
   }
+
+  &__link{
+    @include style-letter(normal, 400, 14px, 1.3);
+    color: $dark-pink;
+  }
+
+  &__link:focus,
+  &__link:hover{
+    color: $white;
+  }
 }
 
 .title {

@@ -1,7 +1,6 @@
 @import '../utils/variables';
 /*---contacts---*/
 .contacts{
-    padding: 100px 0;
     width: 100%;
 }
 .contacts__container{
@@ -325,6 +324,10 @@
         .contacts__card{
             width: 270px;
             height: 412px;
+        }
+
+        .contacts__list{
+            justify-content: center;
         }
         .cards__data{
             margin-bottom: 10px;
