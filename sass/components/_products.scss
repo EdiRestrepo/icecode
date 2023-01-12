@@ -183,10 +183,20 @@
     transition: 500ms;
   }
 
+  .tarjet-1:hover .tarjet-1__mix-btn {
+    border-radius: 35%;
+  }
+  .tarjet-2:hover .tarjet-1__mix-btn {
+    border-radius: 35%;
+  }
+  .tarjet-3:hover .tarjet-1__mix-btn {
+    border-radius: 35%;
+  }
+
   .tarjet-1:hover .tarjet-1__btn {
     fill: $white;
     background-color: $dark-pink;
-    transition: 250ms;
+    transition: 500ms;
   }
 
   .tarjet-1:hover .mix-btn__svg {
@@ -198,7 +208,7 @@
   .tarjet-2:hover .tarjet-2__btn {
     fill: $white;
     background-color: $dark-pink;
-    transition: 250ms;
+    transition: 500ms;
   }
 
   .tarjet-2:hover .mix-btn__svg {
@@ -210,7 +220,7 @@
   .tarjet-3:hover .tarjet-3__btn {
     fill: $white;
     background-color: $dark-pink;
-    transition: 250ms;
+    transition: 500ms;
   }
 
   .tarjet-3:hover .mix-btn__svg {
@@ -223,18 +233,21 @@
     background-color: $white;
     border: none;
     cursor: pointer;
+    transition: 500ms;
   }
 
   .tarjet-2__btn {
     background-color: $white;
     border: none;
     cursor: pointer;
+    transition: 500ms;
   }
 
   .tarjet-3__btn {
     background-color: $white;
     border: none;
     cursor: pointer;
+    transition: 500ms;
   }
 
   .products__image-1 {
